@@ -570,3 +570,22 @@ footer .footerOutline {
 footer .patrociniosFooter {
     background: #00806c
 }
+
+/*-------------------SECTION DIVIDER GRADIENT--------------------------------*/
+.gradient-divider {
+    height: 20px;
+    position: relative;
+    width: 100%;
+    background: radial-gradient(ellipse farthest-side at top center, rgba(0, 0, 0, 0.08), transparent);
+}
+
+.gradient:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02), transparent);
+}

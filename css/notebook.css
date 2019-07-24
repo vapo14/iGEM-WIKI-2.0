@@ -6,11 +6,12 @@
     position: -webkit-sticky;
     position: sticky;
     top: 10rem;
+    z-index: 50;
 }
 
 #pullout {
     position: absolute;
-    left: -550px;
+    left: -580px;
     background: #f5f5f5;
     transition: all 0.5s ease;
 }
@@ -34,7 +35,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 36px;
+    width: 4rem;
     height: 280px;
     background: #00806c;
     cursor: pointer;
@@ -45,6 +46,7 @@
 #calendar-container {
     overflow-x: hidden;
     background-color: #333;
+    box-shadow: 0px 1px 15px #333;
     color: white;
     width: 50vw;
     min-height: 300px;
@@ -113,4 +115,13 @@
     background-color: #FFB454;
     cursor: pointer;
     color: black;
+}
+
+/* .June-2,
+.July-24 {
+    display: none;
+} */
+
+.notebook-content {
+    height: 100vh;
 }

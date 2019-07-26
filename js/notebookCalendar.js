@@ -80,6 +80,14 @@ function renderCalendar(date = CURR_DATE) {
     var currentDay = document.getElementsByClassName("today-cell")[0].innerHTML;
     $(".dateContent").fadeOut();
     $("." + monthString[0] + "-" + currentDay).fadeIn();
+    $(".today-cell")[0].innerHTML += '<div class="dot"></div>';
+    var dates = [
+        ["May", "4", "4", "4", "4", "4", "4", "4"],
+        ["June", "4", "4", "4", "4", "4"],
+        ["July", "4", "4", "4", "4", "4", "4"],
+        ["August", "4", "4", "4", "4", "4"]
+    ];
+
 }
 
 [...document.getElementsByClassName('btn')].forEach(btn => {

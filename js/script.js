@@ -23,13 +23,9 @@ jQuery(document).ready(function () {
     });
     /*------------------------LOADING SCREEN-----------------------------*/
     setTimeout(function () {
-        $('body').addClass('loaded');
+        $('.wrapper').addClass('loaded');
         $('nav').css('visibility', 'visible');
     }, 3000);
-
-
-
-
 });
 
 
@@ -84,4 +80,95 @@ $(document).on("click", ".naccs .menu div", function () {
             .innerHeight();
         $(".naccs ul").height(listItemHeight + "px");
     }
+});
+
+//------------------TEAM MEMBERS MODAL LOGIC-------------------
+var $button = $('.button'),
+    $body = $('body'),
+    $content = $('.content'),
+    $modalContainer = $('.modal-container'),
+    btnId;
+
+$button.on('click', function () {
+    $modalContainer.removeClass('one');
+    $modalContainer.removeClass('out');
+    btnId = $(this).attr('id');
+
+    switch (btnId) {
+        case "one":
+            $modalContainer = $('#one-modal-container');
+            $modalContainer.addClass(btnId);
+            break;
+
+        case "two":
+            $modalContainer = $('#two-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "three":
+            $modalContainer = $('#three-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "four":
+            $modalContainer = $('#four-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "five":
+            $modalContainer = $('#five-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "six":
+            $modalContainer = $('#six-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "seven":
+            $modalContainer = $('#seven-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "eight":
+            $modalContainer = $('#eight-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "nine":
+            $modalContainer = $('#nine-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "ten":
+            $modalContainer = $('#ten-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "eleven":
+            $modalContainer = $('#eleven-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "twelve":
+            $modalContainer = $('#twelve-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "thirteen":
+            $modalContainer = $('#thirteen-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        case "fourteen":
+            $modalContainer = $('#fourteen-modal-container');
+            $modalContainer.addClass('one');
+            break;
+        default:
+            break;
+    }
+    $content
+        .removeAttr('class')
+        .addClass('content');
+
+    $body.addClass('modal-active');
+    // if (btnId == 'two' || btnId == 'three' || btnId == 'four') {
+    //     $content.addClass(btnId);
+    // }
+
+});
+
+$modalContainer.on('click', function () {
+    $(this).addClass('out');
+    $body.removeClass('modal-active');
+    $content.addClass('out');
+
 });

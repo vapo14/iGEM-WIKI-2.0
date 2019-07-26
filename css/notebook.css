@@ -11,7 +11,7 @@
 
 #pullout {
     position: absolute;
-    left: -580px;
+    left: -58rem;
     background: #f5f5f5;
     transition: all 0.5s ease;
 }
@@ -124,4 +124,14 @@
 
 .notebook-content {
     height: 100vh;
+}
+
+.dot {
+    background-color: #FFB454;
+    width: .8rem;
+    height: .8rem;
+    position: relative;
+    top: 80%;
+    left: 35%;
+    border-radius: 5rem;
 }

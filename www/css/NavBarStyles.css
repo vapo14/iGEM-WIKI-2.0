@@ -123,8 +123,7 @@ nav ul li {
 }
 
 
-nav ul li:before,
-nav ul li:after {
+nav ul li:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -679,6 +678,8 @@ footer .patrociniosFooter {
 
 /*-------------------SECTION DIVIDER GRADIENT--------------------------------*/
 .gradient-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height: 20px;
     position: relative;
     width: 100%;

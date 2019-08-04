@@ -678,6 +678,8 @@ footer .patrociniosFooter {
 
 /*-------------------SECTION DIVIDER GRADIENT--------------------------------*/
 .gradient-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height: 20px;
     position: relative;
     width: 100%;

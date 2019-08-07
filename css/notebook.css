@@ -6,11 +6,12 @@
     position: -webkit-sticky;
     position: sticky;
     top: 10rem;
+    z-index: 50;
 }
 
 #pullout {
     position: absolute;
-    left: -550px;
+    left: -50rem;
     background: #f5f5f5;
     transition: all 0.5s ease;
 }
@@ -31,86 +32,222 @@
 }
 
 #pullout-tab {
-    position: absolute;
+    position: relative;
     top: 0;
-    right: 0;
-    width: 36px;
-    height: 280px;
+    left: 50rem;
+    width: 4rem;
+    height: 32rem;
     background: #00806c;
-    cursor: pointer;
-    z-index: 60;
+    box-shadow: 0 5px 10px 2px #333333a6;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    z-index: 100;
 }
 
-
-#calendar-container {
-    overflow-x: hidden;
-    background-color: #333;
-    color: white;
-    width: 50vw;
-    min-height: 300px;
-    max-width: 600px;
-    display: block;
-    margin: 2vh auto;
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-
-#calendar-title {
-    width: 90%;
-    margin: 5vh auto;
-    text-align: center;
-}
-
-#calendar-table {
-    width: auto;
+/*-----------------CALENDAR STYLES------------------------*/
+.calendar {
+    background-color: #ffffff;
+    width: 50rem;
+    max-height: 100%;
     margin: auto;
+    user-select: none;
+    box-shadow: 0 5px 10px 2px #333333a6;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-#calendar-table td,
-#calendar-table th {
-    padding: 15px 20px;
-    border: none;
-    text-align: center;
-    border-radius: 10px;
+.calendar .cal-check {
+    display: none;
 }
 
-.today-cell {
+.calendar .cal-check:checked+.cal {
+    display: block;
+}
+
+.calendar .cal-year-check {
+    display: none;
+}
+
+.calendar .cal-year-check:checked+.cal-month-check+.cal {
+    display: block;
+}
+
+.calendar .cal-month-check[data-cal-year="2019"] {
+    display: none;
+}
+
+.calendar .cal-month-check[data-cal-year="2019"]:checked+.cal {
+    display: block;
+}
+
+.calendar .cal-month-check[data-cal-year="2019"]:checked+.cal .year-picker {
+    display: none;
+}
+
+.calendar .cal-month-check[data-cal-year="2019"]:checked+.cal .month-picker[data-cal-year="2019"] {
+    display: grid;
+}
+
+.calendar .cal-month-check[data-cal-year="2020"] {
+    display: none;
+}
+
+.calendar .cal-month-check[data-cal-year="2020"]:checked+.cal {
+    display: block;
+}
+
+.calendar .cal-month-check[data-cal-year="2020"]:checked+.cal .year-picker {
+    display: none;
+}
+
+.calendar .cal-month-check[data-cal-year="2020"]:checked+.cal .month-picker[data-cal-year="2020"] {
+    display: grid;
+}
+
+.calendar .cal {
+    display: none;
+}
+
+.calendar .cal .cal-head {
+    color: #ffffff;
+    background-color: #00806c;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.calendar .cal .cal-head .controls {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.calendar .cal .cal-head .controls:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.calendar .cal .cal-head .controls:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calendar .cal .cal-head .controls .cal-change-year {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.calendar .cal .cal-head .controls .cal-change-year:hover,
+.calendar .cal .cal-head .controls .cal-change-year:active {
     background-color: #00806c;
 }
 
-#date-text {
+.calendar .cal .cal-head .controls .cal-change-year svg {
+    width: 12px;
+    height: 12px;
+    fill: #ffffff;
+    vertical-align: middle;
+}
+
+.calendar .cal .cal-head .controls .cal-change-month {
+    text-align: center;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+}
+
+.calendar .cal .cal-head .controls .cal-change-month:hover,
+.calendar .cal .cal-head .controls .cal-change-month:active {
+    background-color: #00806c;
+}
+
+.calendar .cal .cal-head .controls .cal-change-month svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.calendar .cal .cal-body {
+    min-height: 270px;
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar .cal .cal-body.year-picker {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.calendar .cal .cal-body.month-picker {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .cal .cal-body .cal-day {
+    background-color: #80BA6B;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    width: 0px;
-    height: 0px;
-    border: 10px solid #333;
-    margin: 1px 10px;
-
+.calendar .cal .cal-body .cal-date {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
-.btn.left {
-    border-right: 10px solid white;
+.calendar .cal .cal-body .cal-date input[type="radio"] {
+    display: none;
 }
 
-.btn.right {
-    border-left: 10px solid white;
+.calendar .cal .cal-body .cal-date input[type="radio"]:checked+span {
+    color: #ffffff;
+    background-color: #00806c;
 }
 
-.btn.left:hover {
-    border-right: 10px solid #ccc;
-    cursor: pointer;
+.calendar .cal .cal-body .cal-date label,
+.calendar .cal .cal-body .cal-date label span {
+    text-align: center;
+    display: block;
 }
 
-.btn.right:hover {
-    border-left: 10px solid #ccc;
-    cursor: pointer;
+.calendar .cal .cal-body .cal-date label span {
+    transition: background-color ease-out 150ms, color ease-out 150ms;
+    border-radius: .5rem;
 }
 
-#calendar-table td:hover {
+.calendar .cal .cal-body .cal-date label span:hover {
+    background-color: #80BA6B;
+}
+
+.dot {
     background-color: #FFB454;
-    cursor: pointer;
-    color: black;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: -3.2rem;
+    left: 15%;
+    border-radius: 5rem;
+}
+
+/*--------------COUNTER STUFF--------------------------*/
+.counter {
+    font-size: 3em;
+}
+
+.counter-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.counter {
+    font-size: 3em;
 }

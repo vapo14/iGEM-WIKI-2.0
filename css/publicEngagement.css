@@ -1,11 +1,11 @@
 html {
     scroll-behavior: smooth;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body {
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .fullpage {
@@ -64,24 +64,6 @@ body {
 .down-button:hover, .up-button:hover {
     opacity: 1;
 }
-
-/*
-.fullpage:nth-child(1) {
-    background-color: rgb(235, 131, 229)
-}
-
-.fullpage:nth-child(2) {
-    background-color: rgb(253, 204, 68);
-}
-
-.fullpage:nth-child(3) {
-    background-color: rgb(83, 235, 83);
-}
-
-.fullpage:nth-child(4) {
-    background-color: rgb(72, 158, 228)
-}
-*/
 
 .arrow-image {
     -webkit-transform: rotate(180deg);

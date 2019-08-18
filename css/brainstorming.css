@@ -1,0 +1,89 @@
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.imgContent {
+    background-image: url(/img/headerIMGS/brainstormingHeader.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*------------------------IMAGE HOVER STYLES=-------------------*/
+
+.box {
+    cursor: pointer;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.box .overbox {
+    background-color: #00806dbd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 22px;
+    text-align: justify;
+    z-index: 100;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+}
+
+.box:hover .overbox {
+    opacity: 1;
+}
+
+.box .overtext {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+}
+
+.box .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+
+.box:hover .title,
+.box:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+    font-size: 0.8em;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}

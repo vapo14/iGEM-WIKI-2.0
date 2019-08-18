@@ -64,7 +64,7 @@ $('#modal-container').click(function () {
 
 //FODA SCRIPTS
 
-// Acc
+// four division content logic 
 $(document).on("click", ".naccs .menu div", function () {
     var numberIndex = $(this).index();
 

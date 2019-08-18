@@ -3,14 +3,16 @@ p {
 }
 
 
+h1 {
+    font-size: 60px;
+}
+
 
 .mainContainer {
     margin-top: 30rem;
 }
 
-h1 {
-    font-size: 60px;
-}
+
 
 @media screen and (max-width: 1171px) {
     .mainContainer {

@@ -12,7 +12,6 @@ function createWindowArray() {
     }
     return arr;
 }
-
 function findCurrent(arr, scr) {
     //determina la pantalla en la que está
     var cur = 1;

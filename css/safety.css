@@ -44,11 +44,9 @@ h1 {
     border: solid 1px #00806d;
 } */
 
-
 /*Code for arrow*/
 
-.p_column:before,
-.p_column:after {
+.p_column:before, .p_column:after {
     content: "";
     position: absolute;
     width: 0;
@@ -93,8 +91,7 @@ h1 {
     border-left-color: #00806d;
 } */
 
-.p_column:last-child:before,
-.p_column:last-child:after {
+.p_column:last-child:before, .p_column:last-child:after {
     display: none
 }
 

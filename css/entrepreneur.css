@@ -230,7 +230,6 @@ ul.nacc li p {
 /*------------------------IMAGE HOVER STYLES=-------------------*/
 
 .box {
-    cursor: pointer;
     height: auto;
     position: relative;
     overflow: hidden;

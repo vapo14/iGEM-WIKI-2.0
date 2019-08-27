@@ -86,7 +86,7 @@ h1 {
 
 .timeline {
     position: relative;
-    background-image: linear-gradient(to bottom, #930054, #983279, #97519b, #926db8, #8b87d0, #7096df, #4ca4e9, #00b1ec, #00b6db, #00b7b2, #00b376, #2aab29);
+    background-image: linear-gradient(to bottom, #00806c, #80ba6b, #FFAB3D);
     width: 50px;
     text-align: center;
     transition: all .3s;

@@ -81,3 +81,8 @@ $(document).on("click", ".naccs .menu div", function () {
         $(".naccs ul").height(listItemHeight + "px");
     }
 });
+
+//FIXED THE NAVIGATION BUG ON MOBILE DEVICES
+$('.dropdown').click(function () {
+    $('.dropdown-content:nth-child(2)').find("div").css("display", "block");
+})

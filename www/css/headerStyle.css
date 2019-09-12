@@ -62,14 +62,14 @@ header video {
 
 .index {
     border-style: solid;
-    border-width: 2px;
-    border-color: #333333;
+    border-width: 1px;
+    border-color: #9c9c9c;
     border-radius: 1rem;
     padding: 2rem;
     position: -webkit-sticky;
     position: sticky;
     top: 15rem;
-    width: 15rem;
+    width: 100%;
     margin-left: 2rem;
 }
 
@@ -97,11 +97,11 @@ header video {
 }
 
 /* HOVER */
+
 @keyframes hover {
     50% {
         transform: translateY(-3px);
     }
-
     100% {
         transform: translateY(-6px);
     }
@@ -112,12 +112,10 @@ header video {
         transform: translateY(6px);
         opacity: 0.4;
     }
-
     50% {
         transform: translateY(3px);
         opacity: 1;
     }
-
     100% {
         transform: translateY(6px);
         opacity: 0.4;

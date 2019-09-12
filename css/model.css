@@ -21,6 +21,11 @@ p {
     z-index: 2000;
 }
 
+.section-lim {
+    position: relative;
+    margin-left: 7%
+}
+
 /*-------------------------COLORED LINES ON LEFT---------------------*/
 
 .section-line-cyan {

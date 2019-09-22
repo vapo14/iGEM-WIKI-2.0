@@ -127,6 +127,7 @@ h1 {
     top: -80vh;
     z-index: 30;
     padding: 3rem;
+    border-radius: 1rem;
 }
 
 @media (max-width: 1223px) {

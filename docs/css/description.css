@@ -1,0 +1,49 @@
+p {
+    font-size: 18px;
+}
+
+
+
+.mainContainer {
+    margin-top: 30rem;
+}
+
+.mainContainer h1 {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1171px) {
+    .mainContainer {
+        margin-left: auto;
+    }
+}
+
+#loader video {
+    position: relative;
+    z-index: 2000;
+}
+
+
+/*-------------------------COLORED LINES ON LEFT---------------------*/
+
+.section-line-cyan {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    left: -7rem;
+    width: 1rem;
+    height: 100%;
+    background-color: #00806d;
+    z-index: 5;
+}
+
+.section-line-green {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    left: -7rem;
+    width: 1rem;
+    height: 100%;
+    background-color: #80ba6b;
+    z-index: 5;
+}

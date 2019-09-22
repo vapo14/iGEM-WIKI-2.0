@@ -1,0 +1,2925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Template | Template </title>
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="css/NavBarStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <nav class="menu navbar-fixed-top navbar">
+    <a href="index.html">
+        <h1 class="navbar-brand" style="color: #333333; font-size: 40px;
+            margin-left: 4rem;">V-TION
+        </h1>
+    </a>
+    <ul class="active">
+        <li>
+            <div class="dropdown">
+                <a style="cursor: default">Team</a>
+                <div class="miniMenu">
+                    <div class="dropdown-content">
+                        <a href="teamMembers.html">Members</a>
+                        <a href="#">Collaborations</a>
+                        <a href="attributions.html">Attributions</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a style="cursor: default">Project</a>
+                <div class="miniMenu">
+                    <div class="dropdown-content">
+                        <a href="description.html">Description</a>
+                        <a href="#">Design</a>
+                        <a href="#">Parts</a>
+                        <a href="#">Results</a>
+                        <a href="brainstorming.html">Brainstorm</a>
+                        <a href="requirements.html">Requirements</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a style="cursor: default">Lab</a>
+                <div class="miniMenu">
+                    <div class="dropdown-content">
+                        <a href="notebook.html">Notebook</a>
+                        <a href="#">Experiments</a>
+                        <a href="#">Characterization</a>
+                        <a href="#">Lab Results</a>
+                        <a href="safety.html">Safety</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a style="cursor: default">Human Practices</a>
+                <div class="miniMenu">
+                    <div class="dropdown-content">
+<<<<<<< HEAD
+                        <a href="#">Integrated Human Practices</a>
+                        <a href="publicEngagement.html">Public Engagement</a>
+=======
+                        <a href="integratedHP.html">Integrated Human Practices</a>
+                        <a href="PublicEngagement.html">Public Engagement</a>
+>>>>>>> e7cb827b2e6ebd2af209b0026801268151a86c43
+                        <a href="#">V-TION</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="model.html" style="cursor:pointer;">Model</a></li>
+        <li><a href="entrepreneurship.html" style="cursor:pointer;">Entrepreneurship</a></li>
+    </ul>
+    <a class="toggle-nav" href="#" style="font-size: 34px;">&#9776;</a>
+    <progress value="0" class="shadow"></progress>
+</nav>
+
+<button onclick="topFunction()" class="btn-sm shadow" id="BackToTopButton"
+    title="Go to top"><img src="img/arrowUP.png"
+        width="100%" height="100%"></button>
+
+
+<div class="wrapper">
+
+    <div id="loader-wrapper">
+
+        <div id="loader">
+            <p>LOADING</p>
+            <div class="circ-one"></div>
+            <div class="circ-two"></div>
+        </div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+</div>
+
+    <link rel="stylesheet" href="/css/notebook.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+<header>
+    <div class="headerContainer">
+        <video autoplay muted loop id="myVideo">
+            <source src="img/descriptionHeader.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            </source></video>
+        <div id="bannersection">
+            <div class="bannercontent">
+                <h1 class="mainHeader">Notebook</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sticky">
+    <div id="pullout">
+        <div id="pullout-tab"></div>
+        <div id="pullout-inner">
+            <div class="calendar">
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_0" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_0" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_0">January 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_0"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_0" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_0">January 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2018_11">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_1">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/0/31"><span>31</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_1" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_1" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_1">February 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_1"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_1" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_1">February 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_0">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_2">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/1/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_2" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_2" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_2">March 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_2"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_2" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_2">March
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_1">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_3">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/2/31"><span>31</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_3" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_3" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_3">April 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_3"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_3" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_3">April
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_2">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_4">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/3/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_4" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_4" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_4">May 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_4"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_4" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_4">May
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_3">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_5">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/4/31"><span>31</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_5" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_5" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_5">June 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_5"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_5" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_5">June
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_4">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_6">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/1">
+                                <span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/2"><span>2
+                                </span>
+                            </label>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/5/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_6" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_6" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_6">July 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_6"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_6" name="calendar" checked="checked">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_6">July
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_5">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_7">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/6"><span>6</span>
+                            </label>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/24"><span>24</span>
+                            </label>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/27" checked="checked"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/6/31"><span>31</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_7" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_7" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_7">August 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_7"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_7" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_7">August
+                                2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_6">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_8">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/7/31"><span>31</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_8" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_8" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_8">September 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_8"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_8" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_8">September 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_7">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_9">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/8/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+                <input class="cal-year-check" type="radio" id="cal_year_select_2019_9" name="calendar">
+                <input class="cal-month-check" type="radio" id="cal_month_select_2019_9" name="calendar" data-cal-year="2019">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_2019_9">October 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls"></div>
+                    </div>
+                    <div class="cal-body year-picker">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_month_select_2019_9"><span>2019</span></label>
+                        </div>
+                    </div>
+                    <div class="cal-body month-picker" data-cal-year="2019">
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_0"><span>January</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_1"><span>February</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_2"><span>March</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_3"><span>April</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_4"><span>May</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_5"><span>June</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_6"><span>July</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_7"><span>August</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_8"><span>September</span></label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()" for="cal_2019_9"><span>October</span></label>
+                        </div>
+                    </div>
+                </div>
+                <input class="cal-check" type="radio" id="cal_2019_9" name="calendar">
+                <div class="cal">
+                    <div class="cal-head">
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-year" for="cal_year_select_2019_9">October 2019
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="controls">
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_8">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z">
+                                    </path>
+                                </svg>
+                            </label>
+                            <label onclick="changeContent()" class="cal-change-month" for="cal_2019_10">
+                                <!-- Borrowed Google's 'Material Design Icons'-->
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                    </path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cal-body">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/1"><span>1</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/2"><span>2</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/3"><span>3</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/4"><span>4</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/5"><span>5</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/6"><span>6</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/7"><span>7</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/8"><span>8</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/9"><span>9</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/10"><span>10</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/11"><span>11</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/12"><span>12</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/13"><span>13</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/14"><span>14</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/15"><span>15</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/16"><span>16</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/17"><span>17</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/18"><span>18</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/19"><span>19</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/20"><span>20</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/21"><span>21</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/22"><span>22</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/23"><span>23</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/24"><span>24</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/25"><span>25</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/26"><span>26</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/27"><span>27</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/28"><span>28</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/29"><span>29</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/30"><span>30</span>
+                            </label>
+                        </div>
+                        <div class="cal-date">
+                            <label onclick="changeContent()">
+                                <input type="radio" name="calendar_date" value="2019/9/31"><span>31</span>
+                            </label>
+                        </div>
+                        <div class="cal-date"></div>
+                        <div class="cal-date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="notebook-content">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat repellendus in nostrum ratione
+                    quisquam corrupti fuga deserunt dolorem ullam quos eos et ducimus molestiae sed velit, obcaecati
+                    vitae minus facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias qui culpa
+                    repudiandae quis laboriosam ex harum ut quas quasi aut, sunt est saepe quidem expedita suscipit
+                    vitae nostrum modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde temporibus earum
+                    explicabo exercitationem perspiciatis delectus omnis cupiditate consequuntur libero, neque aperiam
+                    rem. Ratione hic dicta facilis aspernatur similique quo optio! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ullam perferendis fuga, facilis aperiam, commodi, atque dolorum veniam
+                    deleniti harum voluptatibus officia molestias iste voluptas minus rem animi sunt numquam in! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Tempora, facilis error! Quibusdam quasi voluptate
+                    assumenda architecto officia quos, cum officiis eaque ea rem vero illum debitis mollitia sed,
+                    dignissimos sequi?
+                </p>
+                <section class="target-section">
+                    <div class="counter-container">
+                        <div class="counter counter-1">0</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container July-24 dateContent">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae blanditiis quasi doloribus,
+                    repellendus ullam consectetur sequi maiores eaque vero dolores harum, perferendis nostrum, ratione
+                    ipsam laboriosam quisquam reiciendis. Eos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, facilis enim. Quod assumenda quasi itaque nulla est id recusandae aut deleniti quia
+                    dolores, nam perspiciatis voluptatibus, consequuntur doloremque ullam molestias.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae blanditiis quasi doloribus,
+                    repellendus ullam consectetur sequi maiores eaque vero dolores harum, perferendis nostrum, ratione
+                    ipsam laboriosam quisquam reiciendis. Eos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, facilis enim. Quod assumenda quasi itaque nulla est id recusandae aut deleniti quia
+                    dolores, nam perspiciatis voluptatibus, consequuntur doloremque ullam molestias.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vitae blanditiis quasi doloribus,
+                    repellendus ullam consectetur sequi maiores eaque vero dolores harum, perferendis nostrum, ratione
+                    ipsam laboriosam quisquam reiciendis. Eos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, facilis enim. Quod assumenda quasi itaque nulla est id recusandae aut deleniti quia
+                    dolores, nam perspiciatis voluptatibus, consequuntur doloremque ullam molestias.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container June-2 dateContent">
+        <div class="row text-center">
+            <h1>June 2</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container July-6 dateContent">
+        <div class="row text-center">
+            <h1>July 6</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dicta dignissimos ad, ipsa cum
+                    numquam
+                    quibusdam vel
+                    omnis facere nostrum aspernatur eaque! Vero impedit cumque sequi. Explicabo modi rerum quia! Lorem
+                    ipsum
+                    dolor sit,
+                    amet consectetur adipisicing elit. Unde doloribus accusantium, molestias, optio eveniet est sit
+                    dolorem
+                    vitae nisi
+                    tenetur id. Quidem impedit necessitatibus expedita, doloribus quisquam perspiciatis sapiente
+                    voluptate?
+                    Lorem ipsum
+                    dolor, sit amet consectetur adipisicing elit. In velit iure vel corrupti assumenda consequuntur
+                    doloribus
+                    sequi
+                    eveniet! Quae aspernatur repellendus perspiciatis? Voluptatibus, officia. Harum aperiam sit corporis
+                    praesentium
+                    sequi!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/notebookCalendar.js"></script>
+
+    <footer>
+    <img src="/img/footerFlowers.png" class="footerOutline">
+    <div class="container-fluid blueFooter">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="row">
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;">Tec-Chihuahua &copy; 2019</h1>
+                </div>
+                <div class="logos">
+                    <a href="https://www.facebook.com/igemcuu/"> <img src="/img/FL.png" class="grow"></a>
+                    <a href="https://www.instagram.com/igemtecchih/"><img src="/img/inst.png" class="grow"></a>
+                    <a href="https://twitter.com/iGEM_TecChih"><img src="/img/twitt.png" class="grow"></a>
+                    <a href="mailto:igemtecchihuahua@gmail.com"><img src="/img/mail.png" class="grow"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid text-center patrociniosFooter">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row"></div>
+                <div class="patrocinios">
+                    <img src="/img/thermofisher_logo.png" class="grow">
+                    <img src="/img/SnapGeneLogo@2x.png" class="grow">
+                    <img src="/img/Mathworks.png" class="grow">
+                    <img src="/img/IDT.png" class="grow">
+                </div>
+            </div>
+        </div>
+    </div> -->
+</footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

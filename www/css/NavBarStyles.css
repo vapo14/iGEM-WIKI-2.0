@@ -21,7 +21,7 @@ h5 {
 
 nav {
     z-index: 10;
-    box-shadow: 0px 1px 15px #00806c;
+    box-shadow: 0px 1px 15px #333;
     visibility: hidden;
     font-stretch: normal;
 }
@@ -91,7 +91,7 @@ ol li {
 .menu a:hover,
 .menu .current-item a {
     text-decoration: none;
-    color: #333333;
+    color: #333;
 }
 
 nav ul {
@@ -364,10 +364,28 @@ progress::-moz-progress-bar {
 
 
 /*---------------------PRELOADING SCREEN------------------------------*/
+
+#chromeInfo {
+    position: relative;
+    top: 80%;
+    left: 49%;
+    z-index: 1010;
+}
+
+#chromeInfo p {
+    margin-left: -12rem;
+}
+
+#chromeInfo img {
+    margin-left: -4rem;
+}
+
+
 .wrapper {
     position: relative;
     height: 100%;
     width: 100%;
+    font-size: 16px;
 }
 
 #loader-wrapper {
@@ -376,6 +394,7 @@ progress::-moz-progress-bar {
     left: 0;
     width: 100%;
     height: 100%;
+    align-content: center;
     z-index: 1000;
 }
 
@@ -391,6 +410,16 @@ progress::-moz-progress-bar {
     z-index: 1001;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+}
+
+@media only screen and (max-width: 700px) {
+    #chromeInfo {
+        left: 55%;
+    }
+
+    #loader {
+        left: 58%;
+    }
 }
 
 #loader:before {
@@ -633,6 +662,10 @@ progress::-moz-progress-bar {
     transition: all 0.3s 1s ease-out;
 }
 
+.loaded+#chromeInfo {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
 
 
 .wrapper {

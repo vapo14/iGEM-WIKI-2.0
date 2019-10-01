@@ -2,6 +2,26 @@
     transition-duration: .5s;
 }
 
+#attrMobile {
+    display: none;
+}
+
+#attrMobile img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #attrContainer {
+        display: none;
+    }
+
+    #attrMobile {
+        display: block;
+    }
+}
+
 
 .imgContent {
     background-image: url(/img/headerIMGS/brainstormingHeader.JPG);

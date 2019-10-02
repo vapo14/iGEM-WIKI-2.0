@@ -17,9 +17,11 @@ h1, h2, h3, h4, h5 {
 
 nav {
     z-index: 10;
-    box-shadow: 0px 1px 15px #333;
     visibility: hidden;
     font-stretch: normal;
+    -webkit-box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
+    box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
 }
 
 p {
@@ -163,6 +165,16 @@ nav ul li:hover::before, nav ul li:hover::after {
     }
 }
 
+#vtionLogo {
+    width: 10%
+}
+
+@media screen and (max-width: 500px) {
+    #vtionLogo {
+        width: 10rem;
+    }
+}
+
 @media screen and (max-width: 1171px) {
     .menu {
         position: relative;
@@ -177,9 +189,12 @@ nav ul li:hover::before, nav ul li:hover::after {
         top: 118%;
         left: 20%;
         padding: 10px 18px;
-        border-radius: 3px;
+        border: none;
         background: white;
         display: block;
+        -webkit-box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
+        box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
     }
     .menu ul:after {
         width: 0px;
@@ -341,8 +356,6 @@ progress::-moz-progress-bar {
 
 /*---------------------PRELOADING SCREEN------------------------------*/
 
-<<<<<<< HEAD
-=======
 #chromeInfo {
     position: relative;
     top: 80%;
@@ -358,8 +371,6 @@ progress::-moz-progress-bar {
     margin-left: -4rem;
 }
 
-
->>>>>>> eb5418b50acc00719221e09ce09305269bb33d5a
 .wrapper {
     position: relative;
     height: 100%;
@@ -395,7 +406,6 @@ progress::-moz-progress-bar {
     #chromeInfo {
         left: 55%;
     }
-
     #loader {
         left: 58%;
     }
@@ -625,15 +635,11 @@ progress::-moz-progress-bar {
     transition: all 0.3s 1s ease-out;
 }
 
-<<<<<<< HEAD
-=======
 .loaded+#chromeInfo {
     opacity: 0;
     transition: all 0.3s ease-out;
 }
 
-
->>>>>>> eb5418b50acc00719221e09ce09305269bb33d5a
 .wrapper {
     position: absolute;
     left: 0;

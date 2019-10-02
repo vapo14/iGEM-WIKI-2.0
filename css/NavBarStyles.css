@@ -356,8 +356,6 @@ progress::-moz-progress-bar {
 
 /*---------------------PRELOADING SCREEN------------------------------*/
 
-<<<<<<< HEAD
-=======
 #chromeInfo {
     position: relative;
     top: 80%;
@@ -373,8 +371,6 @@ progress::-moz-progress-bar {
     margin-left: -4rem;
 }
 
-
->>>>>>> eb5418b50acc00719221e09ce09305269bb33d5a
 .wrapper {
     position: relative;
     height: 100%;
@@ -410,7 +406,6 @@ progress::-moz-progress-bar {
     #chromeInfo {
         left: 55%;
     }
-
     #loader {
         left: 58%;
     }
@@ -640,15 +635,11 @@ progress::-moz-progress-bar {
     transition: all 0.3s 1s ease-out;
 }
 
-<<<<<<< HEAD
-=======
 .loaded+#chromeInfo {
     opacity: 0;
     transition: all 0.3s ease-out;
 }
 
-
->>>>>>> eb5418b50acc00719221e09ce09305269bb33d5a
 .wrapper {
     position: absolute;
     left: 0;

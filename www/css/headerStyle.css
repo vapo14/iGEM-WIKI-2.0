@@ -70,7 +70,6 @@ header video {
     position: sticky;
     top: 15rem;
     width: 100%;
-    margin-left: 2rem;
 }
 
 @media screen and (max-width: 1171px) {

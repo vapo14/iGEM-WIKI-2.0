@@ -22,10 +22,8 @@
 
     <nav class="menu navbar-fixed-top navbar">
     <a href="index.html">
-        <h1 class="navbar-brand" style="color: #333333; font-size: 40px;
-            margin-left: 4rem;">V-TION
-        </h1>
-    </a>
+        <img src="/img/Logo negro small.png" class="img-responsive" width="10%"
+            style="margin-bottom: -6rem; margin-left: 2rem; margin-top: 1rem;"> </a>
     <ul class="active">
         <li>
             <div class="dropdown">
@@ -49,7 +47,6 @@
                         <a href="#">Parts</a>
                         <a href="#">Results</a>
                         <a href="brainstorming.html">Brainstorm</a>
-                        <a href="requirements.html">Requirements</a>
                     </div>
                 </div>
             </div>
@@ -73,13 +70,8 @@
                 <a style="cursor: default">Human Practices</a>
                 <div class="miniMenu">
                     <div class="dropdown-content">
-<<<<<<< HEAD
-                        <a href="#">Integrated Human Practices</a>
-                        <a href="publicEngagement.html">Public Engagement</a>
-=======
                         <a href="integratedHP.html">Integrated Human Practices</a>
-                        <a href="PublicEngagement.html">Public Engagement</a>
->>>>>>> e7cb827b2e6ebd2af209b0026801268151a86c43
+                        <a href="publicEngagement.html">Public Engagement</a>
                         <a href="#">V-TION</a>
                     </div>
                 </div>
@@ -87,28 +79,39 @@
         </li>
         <li><a href="model.html" style="cursor:pointer;">Model</a></li>
         <li><a href="entrepreneurship.html" style="cursor:pointer;">Entrepreneurship</a></li>
+        <li>
+            <div class="dropdown">
+                <a style="cursor: default">Judging</a>
+                <div class="miniMenu">
+                    <div class="dropdown-content">
+                        <a href="requirements.html">Awards</a>
+                    </div>
+                </div>
+            </div>
+        </li>
     </ul>
     <a class="toggle-nav" href="#" style="font-size: 34px;">&#9776;</a>
     <progress value="0" class="shadow"></progress>
 </nav>
 
-<button onclick="topFunction()" class="btn-sm shadow" id="BackToTopButton"
-    title="Go to top"><img src="img/arrowUP.png"
+<button onclick="topFunction()" class="btn-sm shadow" id="BackToTopButton" title="Go to top"><img src="img/arrowUP.png"
         width="100%" height="100%"></button>
 
 
 <div class="wrapper">
 
     <div id="loader-wrapper">
-
-        <div id="loader">
-            <p>LOADING</p>
+        <div id="loader" class="text-center">
+            <p>LOADING </p>
             <div class="circ-one"></div>
             <div class="circ-two"></div>
         </div>
-
         <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+        <div class="loader-section section-right" style="z-index: 999"></div>
+        <div id="chromeInfo">
+            <p>Works Better on Chrome</p>
+            <img src="/img/chorme.png" class="img-responsive" width="25px" height="25px">
+        </div>
     </div>
 </div>
 
@@ -128,6 +131,43 @@
 </header>
 
 <link rel="stylesheet" href="/css/index.css">
+
+<div class="container-fluid">
+    <img class="content-image" src="/img/abstract.JPG" style="height: 100vh">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5" style="position: relative">
+            <div class="abstract-Container text-center">
+                <h2>Abstract</h2>
+                <p>
+                    Verticillium dahliae is a phytopathogenic fungus that affects more than 300 species around the
+                    world, including cotton. It attacks the plant’s vascular system, causing wilting and reducing the
+                    product’s quality and overall crop production 2 . Infections by this fungus have caused tremendous
+                    losses in the agricultural sector. Around 150,000 tons of cotton, translating into over $8,700,000 1
+                    USD, have been lost every year during recent decades from diseases caused by this particular
+                    organism 3 . 
+                </p>
+                <p>
+                    To prevent and inhibit V. dahliae’s infection, the transformation of E. coli to produce the
+                    following
+                    three antifungal peptides recombinantly, is presented: AtPFN1 has been shown to break down
+                    fungal cell walls, even when found as spores 4 ; WAMP1b inhibits fungalysin, which is a fungal
+                    enzyme produced as a response to the plant’s own defense mechanisms 5 ; finally, PsDef1 produces
+                    morphological changes to fungal mycelium 6 .
+                </p>
+                <p>
+                    Additionally, the elaboration of a systemic, preventive and treating biofungicide using the
+                    produced recombinant antifungal peptides as an active ingredient, is proposed.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/Logo blanco.PNG" class="img-responsive" width="80%" style="position: absolute; top: -80vh; z-index: 30" id="logo-blanco">
+        </div>
+    </div>
+</div>
+
+
 
 <div class="container-fluid">
     <div class="content">

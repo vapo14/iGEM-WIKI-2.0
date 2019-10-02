@@ -41,7 +41,7 @@ h1 {
 }
 
 .content .content-overlay {
-    background: #333333d0;
+    background: #00806db4;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -63,7 +63,7 @@ h1 {
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    height: 50rem;
+    height: 100vh;
 }
 
 .content-details {
@@ -116,6 +116,32 @@ h1 {
 
 .fadeIn-right {
     left: 80%;
+}
+
+
+
+.abstract-Container {
+    background-color: #ffffffd7;
+    color: #333;
+    position: absolute;
+    top: -80vh;
+    z-index: 30;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1223px) {
+    .abstract-Container {
+        max-height: 80vh;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 993px) {
+    #logo-blanco {
+        display: none;
+    }
 }
 
 footer {

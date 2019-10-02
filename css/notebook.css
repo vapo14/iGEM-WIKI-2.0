@@ -236,6 +236,39 @@
     border-radius: 5rem;
 }
 
+#instructions {
+    position: relative;
+    z-index: -1;
+}
+
+
+.lab-table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+.lab-table td,
+.lab-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.lab-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.lab-table tr:hover {
+    background-color: #ddd;
+}
+
+.lab-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #80BA6B;
+    color: white;
+}
+
 /*--------------COUNTER STUFF--------------------------*/
 .counter {
     font-size: 3em;

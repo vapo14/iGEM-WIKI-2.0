@@ -635,12 +635,12 @@ progress::-moz-progress-bar {
     transition: all 0.3s 1s ease-out;
 }
 
-.loaded+#chromeInfo {
+<<<<<<< HEAD .loaded+#chromeInfo {
     opacity: 0;
     transition: all 0.3s ease-out;
 }
 
-.wrapper {
+=======>>>>>>>b857cd57bbd2e97cad4b2d54d438cd795dbc228a .wrapper {
     position: absolute;
     left: 0;
     top: 0;

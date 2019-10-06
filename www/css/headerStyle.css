@@ -60,6 +60,12 @@ header video {
     text-transform: uppercase;
 }
 
+.main-content {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .index {
     border-style: solid;
     border-width: 1px;
@@ -70,6 +76,12 @@ header video {
     position: sticky;
     top: 15rem;
     width: 100%;
+}
+
+.indexpage-section {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 20%;
 }
 
 @media screen and (max-width: 1171px) {

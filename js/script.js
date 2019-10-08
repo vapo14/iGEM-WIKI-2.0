@@ -4,6 +4,7 @@ jQuery(document).ready(function () {
         jQuery('.menu ul').toggleClass('active');
 
         e.preventDefault();
+        $('[data-toggle="popover"]').popover();
     });
 
 

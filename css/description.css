@@ -41,3 +41,40 @@ p {
     background-color: #80ba6b;
     z-index: 5;
 }
+
+ol li {
+    background-color: white;
+}
+
+#absRef1:target,
+#absRef2:target,
+#absRef3:target,
+#absRef4:target,
+#absRef5:target,
+#absRef6:target,
+#absRef7:target,
+#absRef8:target,
+#absRef9:target,
+#absRef10:target,
+#absRef11:target,
+#absRef12:target,
+#absRef13:target,
+#absRef14:target,
+#absRef15:target,
+#absRef16:target,
+#absRef17:target,
+#absRef18:target,
+#absRef19:target,
+#absRef20:target,
+#absRef21:target,
+#absRef22:target,
+#absRef23:target,
+#absRef24:target,
+#absRef25:target,
+#absRef26:target,
+#absRef27:target,
+#absRef28:target,
+#absRef29:target {
+    background-color: #80ba6b9c;
+    -webkit-transition: all 2s linear;
+}

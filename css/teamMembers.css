@@ -562,97 +562,249 @@
 }
 
 
+.material-card.Grey h2 {
+    background-color: #333333;
+}
+
+.material-card.Grey h2:after {
+    border-top-color: #333333;
+    border-right-color: #333333;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.material-card.Grey h2:before {
+    border-top-color: transparent;
+    border-right-color: #202020;
+    border-bottom-color: #202020;
+    border-left-color: transparent;
+}
+
+.material-card.Grey.mc-active h2:before {
+    border-top-color: transparent;
+    border-right-color: #333333;
+    border-bottom-color: #333333;
+    border-left-color: transparent;
+}
+
+.material-card.Grey.mc-active h2:after {
+    border-top-color: #202020;
+    border-right-color: #202020;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.material-card.Grey .mc-btn-action {
+    background-color: #333333;
+}
+
+.material-card.Grey .mc-btn-action:hover {
+    background-color: #202020;
+}
+
+.material-card.Grey .mc-footer h4 {
+    color: #202020;
+}
+
+.material-card.Grey.mc-active .mc-content {
+    background-color: #50505079;
+}
+
+.material-card.Grey.mc-active .mc-footer {
+    background-color: #505050bd;
+}
+
+.material-card.Grey.mc-active .mc-btn-action {
+    border-color: #50505079;
+}
+
+/* BROWN COLOR CARDS */
+
+
+.material-card.Brown h2 {
+    background-color: #C47E6D;
+}
+
+.material-card.Brown h2:after {
+    border-top-color: #C47E6D;
+    border-right-color: #C47E6D;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.material-card.Brown h2:before {
+    border-top-color: transparent;
+    border-right-color: #a16657;
+    border-bottom-color: #a16657;
+    border-left-color: transparent;
+}
+
+.material-card.Brown.mc-active h2:before {
+    border-top-color: transparent;
+    border-right-color: #C47E6D;
+    border-bottom-color: #C47E6D;
+    border-left-color: transparent;
+}
+
+.material-card.Brown.mc-active h2:after {
+    border-top-color: #a16657;
+    border-right-color: #a16657;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+/* IM NOT SO SURE ABOUT THE RED COLOR AND THE BROWN BACKGROUND BUT OH WELL */
+
+.material-card.Brown .mc-btn-action {
+    background-color: #E05A39;
+}
+
+.material-card.Brown .mc-btn-action:hover {
+    background-color: rgb(204, 80, 49);
+}
+
+.material-card.Brown .mc-footer h4 {
+    color: #a16657;
+}
+
+.material-card.Brown.mc-active .mc-content {
+    background-color: #E2A799;
+}
+
+.material-card.Brown.mc-active .mc-footer {
+    background-color: #E2A799;
+}
+
+.material-card.Brown.mc-active .mc-btn-action {
+    border-color: #E2A799;
+}
+
+#advisorContainer p {
+    margin-bottom: 4rem;
+}
+
+
 /*---------------- CAROUSEL ---------------------*/
 
-.slider {
-    background-color: white;
+.carousel-item>div {
+    height: 700px;
+    line-height: 500px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+/* Carousel */
+
+.carousel {
     position: relative;
-    width: 100%;
-    height: 600px;
     overflow: hidden;
-    display: none;
+    width: 100%;
+    -webkit-box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
 }
 
-.slider-inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    transition-timing-function: cubic-bezier(0.22, 1.61, 0.65, 1);
-    transition-duration: 1s;
-    background-visibility: hidden;
-    transition-delay: .75s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+.carousel-container {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 500%;
+    transition: transform 0.3s cubic-bezier(.694, .0482, .335, 1);
 }
 
-.slide {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    background-color: #f1c40f;
-    background-visibility: hidden;
-    transition-timing-function: cubic-bezier(0.25, 0.5, 0.25, 1.25);
-    -webkit-transform: translateZ(0) scale(0.8, 0.8);
-    transform: translateZ(0) scale(0.8, 0.8);
-    transition-duration: .5s;
-    text-align: center;
-    line-height: 600px;
-    font-size: 5rem;
-    color: white;
-}
-
-.slide.active {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    transition-delay: 2s;
-}
-
-.slide:nth-child(2n) {
-    background-color: #2ecc71;
-}
-
-.slide:nth-child(3n) {
-    background-color: #3498db;
-}
-
-.slide:nth-child(4n) {
-    background-color: #9b50ba;
-}
-
-.slider-nav {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    padding: 20px;
-    text-align: center;
-}
-
-.slider-nav>div {
+.carousel-item {
+    position: relative;
     float: left;
-    width: 10px;
-    height: 10px;
-    border: 1px solid white;
-    z-index: 2;
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+    width: 20%;
+}
+
+/* Next / Prev Buttons */
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    background-color: #00806c;
+    opacity: 0.7;
     border-radius: 50%;
-    opacity: .5;
-    transition-duration: .25s;
-    background-color: transparent;
-    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+    transition: opacity 0.3s ease;
 }
 
-.slider-nav>div:hover {
+.carousel-prev {
+    left: 2%;
+    padding-right: 3px;
+}
+
+.carousel-prev::before {
+    content: '\f053';
+    font-family: "FontAwesome";
+}
+
+.carousel-next {
+    right: 2%;
+    padding-left: 3px;
+}
+
+.carousel-next::before {
+    content: '\f054';
+    font-family: "FontAwesome";
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
     opacity: 1;
 }
 
-.slider-nav>div.active {
-    background-color: white;
-    -webkit-transform: scale(2);
-    transform: scale(2);
+/* Pagination */
+
+.carousel-pagination {
+    list-style: none;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    cursor: pointer;
+    margin: 0 7px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition-property: transform, opacity, background-color;
+    transition-duration: 0.3s;
+}
+
+.carousel-bullet:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.carousel-bullet.active-bullet,
+.carousel-bullet.active-bullet:hover {
     opacity: 1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-color: #fff;
+    cursor: default;
 }

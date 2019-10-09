@@ -41,8 +41,10 @@
     top: 4rem;
     width: 100%;
     height: 600px;
-    border-radius: 2px;
-    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 5px 38px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 38px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 38px -17px rgba(0, 0, 0, 0.75);
     overflow: hidden;
     overflow-y: scroll;
     background: #fff;
@@ -50,6 +52,19 @@
     font-family: Raleway, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.frame::-webkit-scrollbar {
+    width: .5rem;
+    border-radius: 1rem;
+}
+
+.frame::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    background-color: #00806c;
 }
 
 .center {

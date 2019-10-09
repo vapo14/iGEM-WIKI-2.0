@@ -28,49 +28,39 @@ $(function () {
     });
 });
 /*------------- CAROUSEL -------------- */
+var carousel = document.querySelector('.carousel');
+var container = carousel.querySelector('.carousel-container');
+var prevBtn = carousel.querySelector('.carousel-prev');
+var nextBtn = carousel.querySelector('.carousel-next');
+var pagination = carousel.querySelector('.carousel-pagination');
+var bullets = [].slice.call(carousel.querySelectorAll('.carousel-bullet'));
+var totalItems = container.querySelectorAll('.carousel-item').length;
+var percent = (100 / totalItems);
+var currentIndex = 0;
 
-$(document).ready(function () {
-    var slide = $(".slide");
-    var viewWidth = $(window).width();
-    var sliderInner = $(".slider-inner");
-    var childrenNo = sliderInner.children().length;
+function next() {
+    slideTo(currentIndex + 1);
+}
 
-    sliderInner.width(viewWidth * childrenNo);
+function prev() {
+    slideTo(currentIndex - 1);
+}
 
-    $(window).resize(function () {
-        viewWidth = $(window).width();
-    });
+function slideTo(index) {
+    index = index < 0 ? totalItems - 1 : index >= totalItems ? 0 : index;
+    container.style.WebkitTransform = container.style.transform = 'translate(-' + (index * percent) + '%, 0)';
+    bullets[currentIndex].classList.remove('active-bullet');
+    bullets[index].classList.add('active-bullet');
+    currentIndex = index;
+}
 
-    function setWidth() {
-        slide.each(function () {
-            $(this).width(viewWidth);
-            $(this).css("left", viewWidth * $(this).index());
-        });
+bullets[currentIndex].classList.add('active-bullet');
+prevBtn.addEventListener('click', prev, false);
+nextBtn.addEventListener('click', next, false);
+
+pagination.addEventListener('click', function (e) {
+    var index = bullets.indexOf(e.target);
+    if (index !== -1 && index !== currentIndex) {
+        slideTo(index);
     }
-
-    function setActive(element) {
-        var clickedIndex = element.index();
-
-        $(".slider-nav .active").removeClass("active");
-        element.addClass("active");
-
-        sliderInner.css("transform", "translateX(-" + clickedIndex * viewWidth + "px) translateZ(0)");
-
-        $(".slider-inner .active").removeClass("active");
-        $(".slider-inner .slide").eq(clickedIndex).addClass("active");
-    }
-
-    setWidth();
-
-    $(".slider-nav > div").on("click", function () {
-        setActive($(this));
-    });
-
-    $(window).resize(function () {
-        setWidth();
-    });
-
-    setTimeout(function () {
-        $(".slider").fadeIn(500);
-    }, 2000);
-});
+}, false);

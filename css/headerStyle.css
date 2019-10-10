@@ -84,6 +84,12 @@ header video {
     border-radius: 2rem;
     padding: .5rem;
     max-width: 25rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 32%;
+    left: 11%;
+    right: 89%;
+    overflow: hidden;
 }
 
 .index ul {
@@ -92,6 +98,13 @@ header video {
     list-style-position: outside;
     width: 100%;
     padding-bottom: 2rem;
+}
+
+.index li {
+    margin-top: 1.5rem;
+    list-style-type: disc;
+    position: relative;
+    font-size: 2rem;
 }
 
 .index a {
@@ -106,30 +119,4 @@ header video {
     text-emphasis: none;
     text-decoration: none;
     color: #FFB454;
-}
-
-.index-title {
-    margin-top: 1.5rem;
-    list-style-type: disc;
-    position: relative;
-    font-size: 2rem;
-}
-
-.index-sub {
-    list-style-type: circle;
-    margin-left: 2rem;
-    margin-top: .5rem;
-    position: relative;
-    font-size: 1.8rem;
-}
-
-.index-container {
-    position: -webkit-sticky;
-    position: sticky;
-    padding-bottom: 0px;
-    top: 32%;
-    left: 11%;
-    right: 89%;
-    overflow: hidden;
-    max-width: 25rem;
 }

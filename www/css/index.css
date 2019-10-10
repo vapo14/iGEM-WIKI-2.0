@@ -129,6 +129,21 @@ h1 {
     padding: 3rem;
     border-radius: 1rem;
     border-radius: 1rem;
+    max-height: 640px;
+    overflow-y: scroll;
+}
+
+.abstract-Container::-webkit-scrollbar {
+    width: .5rem;
+    border-radius: 1rem;
+}
+
+.abstract-Container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.abstract-Container::-webkit-scrollbar-thumb {
+    background-color: #00806c;
 }
 
 @media (max-width: 1223px) {

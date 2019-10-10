@@ -60,39 +60,38 @@ header video {
     text-transform: uppercase;
 }
 
-.main-content {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 @media screen and (max-width: 1171px) {
     .index {
         visibility: hidden;
     }
 }
 
-@media (min-height: 300px) {
-    .index {
-        position: sticky;
-        top: 0;
-    }
+.main-content {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .index {
-    top: 50px;
-    display: flex;
+    /* display: flex; */
     background: #ececec;
     border-radius: 2rem;
     padding: .5rem;
-    top: 15rem;
-    width: 100%;
-    margin-left: 20%;
+    max-width: 25rem;
 }
 
 .index ul {
     margin-left: 0rem;
     margin-top: 0em;
+    list-style-position: outside;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .index a {
@@ -122,4 +121,15 @@ header video {
     margin-top: .5rem;
     position: relative;
     font-size: 1.8rem;
+}
+
+.index-container {
+    position: -webkit-sticky;
+    position: sticky;
+    padding-bottom: 0px;
+    top: 32%;
+    left: 11%;
+    right: 89%;
+    overflow: hidden;
+    max-width: 25rem;
 }

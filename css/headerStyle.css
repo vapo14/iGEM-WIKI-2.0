@@ -60,14 +60,19 @@ header video {
     text-transform: uppercase;
 }
 
+#index-content {
+    margin-left: 22%;
+    max-width: 73%;
+}
+
 @media screen and (max-width: 1450px) {
     .index {
         visibility: hidden;
     }
     #index-content {
-        margin-left: 0;
-        width: 100%;
-        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
     }
 }
 
@@ -95,11 +100,6 @@ header video {
     left: 5%;
     /* right: 95%; */
     overflow: hidden;
-}
-
-#index-content {
-    margin-left: 22%;
-    max-width: 73%;
 }
 
 .index ul {
@@ -130,7 +130,6 @@ header video {
     text-decoration: none;
     color: #FFB454;
 }
-
 
 .skewed-bg {
     background: whitesmoke;

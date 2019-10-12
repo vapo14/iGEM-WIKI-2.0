@@ -60,9 +60,14 @@ header video {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1171px) {
+@media screen and (max-width: 1450px) {
     .index {
         visibility: hidden;
+    }
+    #index-content {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -83,13 +88,18 @@ header video {
     background: #ececec;
     border-radius: 2rem;
     padding: .5rem;
-    max-width: 25rem;
+    width: 25rem;
     position: -webkit-sticky;
     position: sticky;
     top: 32%;
-    left: 11%;
-    right: 89%;
+    left: 5%;
+    /* right: 95%; */
     overflow: hidden;
+}
+
+#index-content {
+    margin-left: 22%;
+    max-width: 73%;
 }
 
 .index ul {

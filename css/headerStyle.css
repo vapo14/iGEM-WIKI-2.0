@@ -60,16 +60,10 @@ header video {
     text-transform: uppercase;
 }
 
-#index-content {
-    margin-left: 22%;
-    max-width: 73%;
-}
-
 @media screen and (max-width: 1450px) {
     .index {
         visibility: hidden;
     }
-
     #index-content {
         margin-left: 5%;
         margin-right: 5%;
@@ -151,28 +145,32 @@ header video {
     color: #ccfff2;
 }
 
-
-#pullout {
+#pullout-index #pullout {
     position: absolute;
     left: -22rem;
     background: #f5f5f5;
     transition: all 0.5s ease;
 }
 
-#pullout:hover {
+#pullout-index #pullout:hover {
     left: 0;
 }
 
-#pullout-inner {
+#pullout-index #pullout-inner {
     padding: 2rem;
     margin: 1rem;
 }
 
-
-#pullout-tab {
+#pullout-index #pullout-tab {
     position: absolute;
     left: 90%;
     width: 3rem;
     height: 100%;
     background-color: #00806c;
+}
+
+#pullout-index {
+    position: sticky;
+    top: 20%;
+    z-index: 999;
 }

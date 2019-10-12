@@ -13,119 +13,178 @@
     </div>
 </header>
 
-<div class="index" id="model-index">
-
-    <h3 style="margin-left: 10%"><b>Index</b></h3>
-
-    <ul>
-        <a href="#abstract">
-            <li>Abstract</li>
-        </a>
-        <a href="#overview">
-            <li>Overview</li>
-        </a>
-        <a href="#theoretical-model">
-            <li>Theoretical Model</li>
-        </a>
-        <a href="#conclusion">
-            <li>Conclusion</li>
-        </a>
-    </ul>
+<div id="pullout-index">
+    <div class="index" id="pullout">
+        <div id="pullout-tab"></div>
+        <div id="pullout-inner">
+            <h3>Index</h3>
+            <ul>
+                <a href="#Abstract">
+                    <li>Abstract</li>
+                </a>
+                <a href="#Our-Model">
+                    <li>Our Model</li>
+                </a>
+                <a href="#Modelling-Growth">
+                    <li>Modelling Growth of V. dahliae</li>
+                </a>
+                <a href="#Gompertz">
+                    <li>Gompertz Equation</li>
+                </a>
+                <a href="#References">
+                    <li>References</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
 
 </div>
-<section class="main-content container-fluid" style="margin-top: -30rem;">
-    <div class="col-md-12">
-        <h1>Abstract</h1><br>
-        Verticillium dahliae is a parasitic, filamentous fungus that affects more than 300 species, cotton being one
-        of the most commonly affected.[1] It attacks the plant’s vascular system, using it to spread through the
-        whole plant. After a while, the mycelium clogs the vascular system and causes the whole plant to wilt. This
-        is known as Verticillium Wilt, and it is responsible for annual losses from 0.5% up to 5% in some states of
-        the U.S.[2]
-        <br><br>
-        Our project’s purpose is to create a product using three different peptides (WAMP1b, AtPFN1, and PsDef1)
-        that attack V. dahliae at different stages of its life cycle as an alternative to the current roundabout
-        methods used to treat this fungus, since there is no fungicide produced specifically for V. dahliae. Those
-        methods result harmful to the plants that they are trying to protect, the soil beneath them, and the land
-        around them.[3]
-        <br><br>
-        Since our end goal is to develop a product, we needed to know the optimal concentrations of our peptides,
-        since an oversaturated concentration of peptides would be costly and potentially detrimental to plant
-        health, and and insufficient concentration could do no effect on fungal growth inhibition. From this
-        problem, we designed our mathematical model.
-        <br><br>
-        <h1>Our Model</h1><br>
-        Our model seeks to find an optimal concentration of our peptides to effectively and efficiently inhibit V.
-        dahliae’s growth. To do this we first needed information on our fungus’s growth kinetics. However, not much
-        has been documented about V. dahliae’s growth. Since we needed that information, we first had to define V.
-        dahliae’s growth curve. Once we had that information, we could differentiate it to its growth with different
-        concentrations of our peptides. After that we evaluate the Relative IC50 of each of our peptides to get an
-        adequate concentration for our peptides.
-        <br><br>
-        This gives our model two goals: Modelling the growth of Verticillium dahliae, and Modelling our peptides’
-        inhibition.
-        <br><br>
-        <h1>Modelling the growth of Verticillium dahliae</h1><br>
-        There are many different ways to model the growth of an organism. A popular method is applying Monod’s
-        Equation [MONOD EQUATION HERE]. It expresses rate of growth as a function of substrate concentration in
-        which [mu max]
-        states that there is a point where growth stops accelerating and reaches a maximum growth speed.[4] Though
-        the equation can be applied to growth models, we realized it was too simple for what we needed. Thus, we
-        started searching for a more specific equation that could describe fungal growth.
-        Then we found many morphologically structured models that had parameters representing different
-        morphological properties of a fungus like avg. hyphae length, hyphae count, diameter. However, we didn’t
-        have the equipment necessary to measure those parameters, and there are practically no publications
-        documenting them for V. dahliae. Looking for an alternative we discovered that we could get rate of growth
-        from dry mass which is one of the most commonly used parameters for measuring fungal growth, but since our
-        sample size would be too small to measure with traditional methods, obtaining that parameter would also be
-        impossible.
-        <br><br>
-        Since we couldn’t measure relevant parameters directly, our Mathematical Model advisor suggested an
-        abstraction of data. Instead of measuring any morphological parameters, we could measure Optical Density
-        with a spectrophotometric assay. This idea came up after finding a paper comparing different mathematical
-        models’ accuracy measuring the growth of microbial colonies by absorbance and plate count methods. After
-        comparing the models, one of them seemed to be our best bet for our own implementation, the Gompertz
-        Equation.[5]
-        <br><br>
-        <h1>Gompertz Equation</h1><br>
-        The Gompertz Growth Curve was first published in 1825 in the Philosophical Transactions of the Royal
-        Society. Although its original purpose was to detail a law of human mortality where a man’s resistance to
-        death diminished as time increased, it has since been used as a growth curve for biological and economic
-        phenomena[6].
-        <br><br>
-        The equation in its most general form is: [GOMPERTZ GENERAL IMAGE HERE]
-        <br><br>
-        In the investigation that compared different models’ accuracy, Gompertz’s equation was expressed like so:
-        [GOMPERTZ OD HERE]
-        <br><br>
-        Where:<br>
-        y: Absorbance (OD)<br>
-        y0: Initial Absorbance (OD)<br>
-        C: Range (ymax - y0)<br>
-        : Maximum Growth Rate (ODh-1)<br>
-        : Lag Time (h)<br>
-        t: Time (h)<br>
-        <br><br>
-        Using Gompertz’s equation to model V. dahliae’s growth is favorable because the parameters can be determined
-        by analyzing our data, instead of it working with an arbitrary constant (K).
-        <br><br><br><br>
+<div class="container">
+    <div class="col-md-12 text-center">
+        <h1 id="Abstract">Abstract</h1>
+        <p>
+            <i>Verticillium dahliae</i> is a parasitic, filamentous fungus that affects more than 300 species, cotton
+            being one
+            of the most commonly affected.<sup><a href="#ref1">1</a></sup> It attacks the plant’s vascular system, using
+            it to spread through the
+            whole plant. After a while, the mycelium clogs the vascular system and causes the whole plant to wilt. This
+            is known as <i>Verticillium Wilt</i>, and it is responsible for annual losses from 0.5% up to 5% in some
+            states of
+            the U.S.<sup><a href="#ref2">2</a></sup>
+        </p>
+
+        <p>
+            Our project’s purpose is to create a product using three different peptides (WAMP1b, AtPFN1, and PsDef1)
+            that attack <i>V. dahliae</i> at different stages of its life cycle as an alternative to the current
+            roundabout
+            methods used to treat this fungus, since there is no fungicide produced specifically for <i>V. dahliae</i>.
+            Those
+            methods result harmful to the plants that they are trying to protect, the soil beneath them, and the land
+            around them.<sup><a href="#ref3">3</a></sup>
+        </p>
+
+        <p>
+            Since our end goal is to develop a product, we needed to know the optimal concentrations of our peptides,
+            since
+            an oversaturated concentration of peptides would be costly and potentially detrimental to plant health, and
+            and
+            insufficient concentration could do no effect on fungal growth inhibition. From this problem, we designed
+            our
+            mathematical model.
+        </p>
+
+        <h1 id="Our-Model">Our Model</h1>
+        <p>
+            Our model seeks to find an optimal concentration of our peptides to effectively and efficiently inhibit <i>
+                V.
+                dahliae’s
+            </i> growth. To do this we first needed information on our fungus’s growth kinetics. However, not much
+            has been documented about <i>V. dahliae</i>’s growth. Since we needed that information, we first had to
+            <strong>
+                define <i>
+                    V.
+                    dahliae
+                </i>’s growth curve
+            </strong>. Once we had that information, we could <strong>
+                differentiate it to its growth with different
+                concentrations of our peptides
+            </strong>. After that we evaluate the <strong>Relative IC<sub>50</sub> of each of our peptides</strong> to
+            get an
+            adequate concentration for our peptides.
+        </p>
+
+        <p>
+            This gives our model two goals: <strong>Modelling the growth of <i>Verticilium dahliae</i> dahliae</strong>,
+            and <strong>
+                Modelling our peptides’
+                inhibition
+            </strong>.
+        </p>
+
+        <h1 id="Modelling-Growth">Modelling the growth of <i>Verticilium dahliae</i></h1>
+        <p>
+            There are many different ways to model the growth of an organism. A popular method is applying Monod’s
+            Equation [MONOD IMG HERE]. It expresses rate of growth(μ) as a function of substrate concentration(S) in
+            which max
+            states that there is a point where growth stops accelerating and reaches a maximum growth speed
+            (μ<sub>max</sub>) and a point
+            midway through the exponential growth phase (K<sub>S</sub>).<sup><a href="#ref4">4</a></sup> Though the
+            equation can be applied to growth models, we
+            realized it was too simple for what we needed, and the concentration of growth substrate wasn’t relevant for
+            our experiment. Thus, we started searching for a more specific equation that could describe fungal growth.
+        </p>
+
+        <p>
+            We found many morphologically structured models that had parameters representing different morphological
+            properties of a fungus like avg. hyphae length, hyphae count, diameter. However, we didn’t have the
+            equipment necessary to measure those parameters, and there are practically no publications documenting them
+            for <i>V. dahliae</i>. Looking for an alternative we discovered that we could get rate of growth from dry
+            mass
+            which is one of the most commonly used parameters for measuring fungal growth, but since our sample size
+            would be too small to measure with traditional methods, obtaining that parameter would also be impossible.
+        </p>
+
+        <p>
+            Since we couldn’t measure relevant parameters directly, our Mathematical Model advisor suggested an
+            abstraction of data. Instead of measuring any morphological parameters, we could measure Optical Density
+            with a spectrophotometric assay. This idea came up after finding a paper comparing different mathematical
+            models’ accuracy measuring the growth of microbial colonies by absorbance and plate count methods. After
+            comparing the models, one of them seemed to be our best bet for our own implementation, the <strong>
+                Gompertz
+                Equation
+            </strong>.<sup><a href="#ref5">5</a></sup>
+        </p>
+
+        <h1 id="Gompertz">Gompertz Equation</h1>
+        <p>
+            The Gompertz Growth Curve was first published in 1825 in the <i>
+                Philosophical Transactions of the Royal
+                Society
+            </i>. Although its original purpose was to detail a law of human mortality where a man’s resistance to
+            death diminished as time increased, it has since been used as a growth curve for biological and economic
+            phenomena.<sup><a href="#ref6">6</a></sup>
+        </p>
+
+        <p>
+            In the investigation that compared different models’ accuracy, Gompertz’s equation was expressed like so:
+        </p>
+        [GOMPERTZ IMG]
+
+        <p>
+            Where:<br>
+            y: Absorbance (OD)<br>
+            y0: Initial Absorbance (OD)<br>
+            C: Range (ymax - y0)<br>
+            μ: Maximum Growth Rate (OD/h)<br>
+            λ: Lag Time (h)<br>
+            t: Time (h)
+        </p>
+
+        <p>
+            Using Gompertz’s equation to model <i>V. dahliae</i>’s growth is favorable because the parameters can be
+            determined
+            by analyzing our data, instead of it working with an arbitrary constant.
+        </p>
 
 
-        References:<br>
+
+        <h1 id="References">References</h1>
         Farr, D., & Rossman. (2014). Fungal Databases, Systemic Mycology and Microbiology Laboratory, ARS, USDA.
-        Retrieved from: http://nt.ars-grin.gov/fungaldatabase<br><br>
+        Retrieved from: http://nt.ars-grin.gov/fungaldatabase
         Land, C., Lawrence, K., & Newman, M. (2016). First Report of Verticillium dahliae on cotton in Alabama. APS
-        Publications. https://doi.org/10.1094/PDIS-10-15-1143-PDN<br><br>
+        Publications. https://doi.org/10.1094/PDIS-10-15-1143-PDN
 
         FAO. (2004). Manejo de malezas para países en desarrollo. Retrieved from:
-        http://www.fao.org/3/y5031s/y5031s00.htm#Contents<br><br>
+        http://www.fao.org/3/y5031s/y5031s00.htm#Contents
 
         Cunningham, A., Lennox, J. & Ross, R. (2010). Microbial growth. Montana State University. Retrieved from:
         https://www.cs.montana.edu/webworks/projects/stevesbook/contents/chapters/chapter002/section002/black/page001.html
-        María-Leonor Pla, Sandra Oltra, María-Dolores Esteban, Santiago Andreu, and Alfredo Palop. (2015).<br><br>
+        María-Leonor Pla, Sandra Oltra, María-Dolores Esteban, Santiago Andreu, and Alfredo Palop. (2015).
         Comparison of Primary Models to Predict Microbial Growth by the Plate Count and Absorbance Methods. BioMed
-        Research International..doi.org/10.1155/2015/365025<br><br>
+        Research International..doi.org/10.1155/2015/365025
 
         Winsor, C. (1932). The Gompertz Curve as a Growth Curve. Proceedings of the National Academy of Sciences of
-        the United States of America, 1–8. doi:10.1073/pnas.18.1.1<br><br>
+        the United States of America, 1–8. doi:10.1073/pnas.18.1.1
     </div>
-</section>
+</div>

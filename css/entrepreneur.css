@@ -89,7 +89,6 @@
 }
 
 
-
 main {
     min-width: 320px;
     max-width: 800px;
@@ -162,31 +161,6 @@ input:checked+label {
     label {
         padding: 15px;
     }
-}
-
-
-.skewed-bg {
-    background: whitesmoke;
-    padding: 200px 0;
-    -webkit-transform: skew(0deg, -10deg);
-    transform: skew(0deg, -10deg);
-    /* margin-top: -200px; */
-}
-
-.skewed-bg .skewed-content {
-    -webkit-transform: skew(0deg, 10deg);
-    transform: skew(0deg, 10deg);
-}
-
-.skewed-bg .skewed-content .title {
-    padding-top: 100px;
-    font-weight: normal;
-}
-
-.skewed-bg .skewed-content .text {
-    width: 60%;
-    margin: 25px auto;
-    color: #ccfff2;
 }
 
 #designTSection h1 {

@@ -53,7 +53,6 @@ header video {
     filter: blur(4px);
 }
 
-
 #pullout-index::-webkit-scrollbar {
     width: .5rem;
     border-radius: 1rem;
@@ -67,7 +66,6 @@ header video {
     background-color: #00806c;
 }
 
-
 .mainHeader {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -79,7 +77,6 @@ header video {
     .index {
         visibility: hidden;
     }
-
     #index-content {
         margin-left: 5%;
         margin-right: 5%;
@@ -142,6 +139,7 @@ header video {
     padding: 200px 0;
     -webkit-transform: skew(0deg, -10deg);
     transform: skew(0deg, -10deg);
+    z-index: 0;
     /* margin-top: -200px; */
 }
 
@@ -189,7 +187,6 @@ header video {
     height: 100%;
     background-color: #00806c;
 }
-
 
 #pullout-index {
     position: sticky;

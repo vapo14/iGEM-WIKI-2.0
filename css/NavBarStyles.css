@@ -51,6 +51,10 @@ html {
     transform: translate3d(0px, 0px, 0px);
 }
 
+a {
+    color: #FFAB3D;
+}
+
 #wikiLINK a {
     color: white;
 }

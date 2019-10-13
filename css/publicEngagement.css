@@ -1,5 +1,9 @@
+.mainHeader {
+    font-weight: normal;
+}
+
 h1 {
-    font-weight: 750;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -7,6 +11,14 @@ h2 {
     font-weight: bold;
     font-size: 28px;
     text-align: left;
+}
+
+h2>a {
+    color: #FFB454;
+}
+
+h2>a:hover {
+    color: #00806c;
 }
 
 h3 {
@@ -28,11 +40,14 @@ ul li {
 .skewed-bg {
     -webkit-transform: skew(0deg, -5deg);
     transform: skew(0deg, -5deg);
-    z-index: 0;
+    z-index: 1;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .skewed-bg .skewed-content {
     -webkit-transform: skew(0deg, 5deg);
     transform: skew(0deg, 5deg);
-    z-index: 0;
+    z-index: 1;
+    padding-top: 0;
 }

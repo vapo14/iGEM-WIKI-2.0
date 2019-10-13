@@ -186,6 +186,8 @@ header video {
     width: 3rem;
     height: 100%;
     background-color: #00806c;
+    color: white;
+    text-align: center;
 }
 
 #pullout-index {
@@ -193,4 +195,12 @@ header video {
     top: 15%;
     z-index: 999;
     line-height: 1;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#pullout-tab div {
+    margin-left: -.8rem;
+    font-size: 18px
 }

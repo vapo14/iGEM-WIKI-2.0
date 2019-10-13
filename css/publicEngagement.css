@@ -26,13 +26,13 @@ ul li {
 }
 
 .skewed-bg {
-    -webkit-transform: skew(0deg, -3deg);
-    transform: skew(0deg, -3deg);
+    -webkit-transform: skew(0deg, -5deg);
+    transform: skew(0deg, -5deg);
     z-index: 0;
 }
 
 .skewed-bg .skewed-content {
-    -webkit-transform: skew(0deg, 3deg);
-    transform: skew(0deg, 3deg);
+    -webkit-transform: skew(0deg, 5deg);
+    transform: skew(0deg, 5deg);
     z-index: 0;
 }

@@ -3,11 +3,15 @@ header {
     margin-bottom: 10rem;
 }
 
-a {
+body a {
     color: #FFB454;
 }
 
-a:hover {
+body a:hover {
+    color: #00806c;
+}
+
+body a:focus {
     color: #00806c;
 }
 

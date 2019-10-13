@@ -283,7 +283,6 @@ header video {
 }
 
 .carousel-prev::before {
-    content: '\f053';
     font-family: "FontAwesome";
 }
 
@@ -293,7 +292,6 @@ header video {
 }
 
 .carousel-next::before {
-    content: '\f054';
     font-family: "FontAwesome";
 }
 

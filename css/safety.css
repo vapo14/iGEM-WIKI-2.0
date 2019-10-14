@@ -10,7 +10,13 @@ h1 {
     margin-top: 5rem;
 }
 
+.carousel-container {
+    width: 1200%;
+}
 
+.carousel-pagination {
+    width: 60%;
+}
 
 /*------------------------4 SECTIONS STYLES----------------------------*/
 

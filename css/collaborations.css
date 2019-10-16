@@ -7,22 +7,15 @@
 
 }
 
-#ref1:target,
-#ref2:target,
-#ref3:target,
-#ref4:target,
-#ref5:target,
-#ref6:target,
-#ref7:target {
-    background-color: #80ba6b9c;
-    -webkit-transition: all 2s linear;
-}
-
 #partCard {
     margin-top: 8rem;
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 5rem;
     -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+#partCard h1 {
+    margin-bottom: 4rem;
 }

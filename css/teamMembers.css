@@ -8,8 +8,8 @@
     margin-top: 1rem;
 }
 
-
 /*----------------NEW TEAM PROTOTYPE------------------------*/
+
 .imgContent {
     background-image: url(/img/headerIMGS/brainstormingHeader.JPG);
     background-attachment: fixed;
@@ -19,7 +19,6 @@
 }
 
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
-
 .fa-spin-fast {
     -webkit-animation: fa-spin-fast 0.2s infinite linear;
     animation: fa-spin-fast 0.2s infinite linear;
@@ -30,7 +29,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -42,7 +40,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
@@ -84,8 +81,7 @@
     font-size: 0.8em;
 }
 
-.material-card h2:before,
-.material-card h2:after {
+.material-card h2:before, .material-card h2:after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -390,7 +386,6 @@
     border-color: #ade6dd;
 }
 
-
 .material-card.Pink h2 {
     background-color: #FF7D5E;
 }
@@ -446,7 +441,6 @@
 .material-card.Pink.mc-active .mc-btn-action {
     border-color: #FF9E86;
 }
-
 
 .material-card.Yellow h2 {
     background-color: #FFAB3D;
@@ -560,7 +554,6 @@
     border-color: #DFF7D7;
 }
 
-
 .material-card.Grey h2 {
     background-color: #333333;
 }
@@ -618,7 +611,6 @@
 }
 
 /* BROWN COLOR CARDS */
-
 
 .material-card.Brown h2 {
     background-color: #C47E6D;
@@ -680,130 +672,4 @@
 
 #advisorContainer p {
     margin-bottom: 4rem;
-}
-
-
-/*---------------- CAROUSEL ---------------------*/
-
-.carousel-item>div {
-    height: 700px;
-    line-height: 500px;
-    font-size: 1.5em;
-    text-align: center;
-    color: #fff;
-}
-
-/* Carousel */
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    -webkit-box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 10px 26px -10px rgba(0, 0, 0, 0.75);
-}
-
-.carousel-container {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    width: 500%;
-    transition: transform 0.3s cubic-bezier(.694, .0482, .335, 1);
-}
-
-.carousel-item {
-    position: relative;
-    float: left;
-    width: 20%;
-}
-
-/* Next / Prev Buttons */
-
-.carousel-prev,
-.carousel-next {
-    position: absolute;
-    top: 50%;
-    background-color: #00806c;
-    opacity: 0.7;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    z-index: 10;
-    transition: opacity 0.3s ease;
-}
-
-.carousel-prev {
-    left: 2%;
-    padding-right: 3px;
-}
-
-.carousel-prev::before {
-    content: '\f053';
-    font-family: "FontAwesome";
-}
-
-.carousel-next {
-    right: 2%;
-    padding-left: 3px;
-}
-
-.carousel-next::before {
-    content: '\f054';
-    font-family: "FontAwesome";
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-    opacity: 1;
-}
-
-/* Pagination */
-
-.carousel-pagination {
-    list-style: none;
-    position: absolute;
-    bottom: 3%;
-    left: 0;
-    right: 0;
-    width: 50%;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-bullet {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #333;
-    cursor: pointer;
-    margin: 0 7px;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition-property: transform, opacity, background-color;
-    transition-duration: 0.3s;
-}
-
-.carousel-bullet:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-.carousel-bullet.active-bullet,
-.carousel-bullet.active-bullet:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    background-color: #fff;
-    cursor: default;
 }

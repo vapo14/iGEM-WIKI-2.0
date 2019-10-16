@@ -3,7 +3,6 @@ html {
     overflow-x: hidden;
 }
 
-
 /*animation element sliding left*/
 
 .animation-element.slide-left {
@@ -52,6 +51,10 @@ html {
     transform: translate3d(0px, 0px, 0px);
 }
 
+a {
+    color: #FFAB3D;
+}
+
 #wikiLINK a {
     color: white;
 }
@@ -69,152 +72,122 @@ html {
     0% {
         opacity: 0;
     }
-
     10% {
         opacity: 0;
         text-shadow: none;
     }
-
     10.1% {
         opacity: 1;
         text-shadow: none;
     }
-
     10.2% {
         opacity: 0;
         text-shadow: none;
     }
-
     20% {
         opacity: 0;
         text-shadow: none;
     }
-
     20.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
     }
-
     20.6% {
         opacity: 0;
         text-shadow: none;
     }
-
     30% {
         opacity: 0;
         text-shadow: none;
     }
-
     30.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     30.5% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     30.6% {
         opacity: 0;
         text-shadow: none;
     }
-
     45% {
         opacity: 0;
         text-shadow: none;
     }
-
     45.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     50% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     55% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     55.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     57% {
         opacity: 0;
         text-shadow: none;
     }
-
     57.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
     }
-
     60% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
     }
-
     60.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     65% {
         opacity: 0;
         text-shadow: none;
     }
-
     65.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     75% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     75.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     77% {
         opacity: 0;
         text-shadow: none;
     }
-
     77.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     85% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     85.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     86% {
         opacity: 0;
         text-shadow: none;
     }
-
     86.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     100% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
@@ -225,164 +198,129 @@ html {
     0% {
         opacity: 0;
     }
-
     10% {
         opacity: 0;
         text-shadow: none;
     }
-
     10.1% {
         opacity: 1;
         text-shadow: none;
     }
-
     10.2% {
         opacity: 0;
         text-shadow: none;
     }
-
     20% {
         opacity: 0;
         text-shadow: none;
     }
-
     20.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
     }
-
     20.6% {
         opacity: 0;
         text-shadow: none;
     }
-
     30% {
         opacity: 0;
         text-shadow: none;
     }
-
     30.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     30.5% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     30.6% {
         opacity: 0;
         text-shadow: none;
     }
-
     45% {
         opacity: 0;
         text-shadow: none;
     }
-
     45.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     50% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     55% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
     }
-
     55.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     57% {
         opacity: 0;
         text-shadow: none;
     }
-
     57.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
     }
-
     60% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
     }
-
     60.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     65% {
         opacity: 0;
         text-shadow: none;
     }
-
     65.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     75% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     75.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     77% {
         opacity: 0;
         text-shadow: none;
     }
-
     77.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     85% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     85.1% {
         opacity: 0;
         text-shadow: none;
     }
-
     86% {
         opacity: 0;
         text-shadow: none;
     }
-
     86.1% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
-
     100% {
         opacity: 1;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
     }
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     color: #333;
 }
 
@@ -411,7 +349,7 @@ p {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 75px;
 }
 
 ol li {
@@ -466,8 +404,7 @@ ol li {
     font-size: 18px;
 }
 
-.menu a:hover,
-.menu .current-item a {
+.menu a:hover, .menu .current-item a {
     text-decoration: none;
     color: #333;
 }
@@ -526,14 +463,12 @@ nav ul li::after {
     transform-origin: right;
 }
 
-nav ul li:hover::before,
-nav ul li:hover::after {
+nav ul li:hover::before, nav ul li:hover::after {
     transform: scaleX(1);
 }
 
 @keyframes slideIn {
     from {}
-
     to {
         transform: translateX(0);
     }
@@ -562,11 +497,9 @@ nav ul li:hover::after {
         position: relative;
         background-color: white;
     }
-
     .menu ul.active {
         display: none;
     }
-
     .menu ul {
         width: 60%;
         position: absolute;
@@ -580,7 +513,6 @@ nav ul li:hover::after {
         -moz-box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
         box-shadow: -1px -3px 34px -12px rgba(0, 0, 0, 1);
     }
-
     .menu ul:after {
         width: 0px;
         height: 0px;
@@ -593,17 +525,14 @@ nav ul li:hover::after {
         border-right: 7px solid transparent;
         border-bottom: 7px solid white;
     }
-
     .menu li {
         margin: 5px 0px 5px 0px;
         float: none;
         display: block;
     }
-
     .menu a {
         display: block;
     }
-
     .toggle-nav {
         padding: 20px;
         padding-bottom: 0;
@@ -615,13 +544,10 @@ nav ul li:hover::after {
         font-size: 20px;
         transition: color linear 0.15s;
     }
-
-    .toggle-nav:hover,
-    .toggle-nav.active {
+    .toggle-nav:hover, .toggle-nav.active {
         text-decoration: none;
         color: #FFAB3D;
     }
-
     .miniMenu {
         position: absolute;
         top: -1rem;
@@ -782,7 +708,6 @@ progress::-moz-progress-bar {
     #chromeInfo {
         left: 55%;
     }
-
     #loader {
         left: 58%;
     }
@@ -870,25 +795,21 @@ progress::-moz-progress-bar {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     25% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
         z-index: 2;
     }
-
     50% {
         left: 60px;
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     75% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
         z-index: 1;
     }
-
     100% {
         left: -10px;
         -webkit-transform: scale(1);
@@ -902,25 +823,21 @@ progress::-moz-progress-bar {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     25% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
         z-index: 2;
     }
-
     50% {
         left: 60px;
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     75% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
         z-index: 1;
     }
-
     100% {
         left: -10px;
         -webkit-transform: scale(1);
@@ -934,25 +851,21 @@ progress::-moz-progress-bar {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     25% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
-
     50% {
         right: 60px;
         -webkit-transform: scale(1);
         transform: scale(1);
         z-index: 1;
     }
-
     75% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
         z-index: 2;
     }
-
     100% {
         right: -10px;
         -webkit-transform: scale(1);
@@ -966,25 +879,21 @@ progress::-moz-progress-bar {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     25% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
-
     50% {
         right: 60px;
         -webkit-transform: scale(1);
         transform: scale(1);
         z-index: 1;
     }
-
     75% {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
         z-index: 2;
     }
-
     100% {
         right: -10px;
         -webkit-transform: scale(1);

@@ -1,17 +1,6 @@
-p {
-    font-size: 18px;
-}
-
-
-h1 {
-    font-size: 60px;
-}
-
-
 .mainContainer {
     margin-top: 30rem;
 }
-
 
 
 @media screen and (max-width: 1171px) {
@@ -19,6 +8,234 @@ h1 {
         margin-left: auto;
     }
 }
+
+/* DESIGN THINKING CSS */
+
+.wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom 0.8s 5s 3 both;
+    animation: wobble-hor-bottom 0.8s 5s 3 both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+
+main {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked+label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid #00806c;
+    border-bottom: 1px solid #fff;
+}
+
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5,
+#tab6:checked~#content6 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}
+
+#designTSection h1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 10rem;
+}
+
+
+.dThinking {
+    margin-top: 5rem;
+    background: #E05A39;
+    padding: 1em;
+    border-radius: 10px;
+    clip-path: circle(15% at 8% 1%);
+    transition: all .5s ease-in-out;
+}
+
+.dThinking:hover {
+    clip-path: circle(75%);
+    background: whitesmoke;
+}
+
+.dThinking span {
+    float: right;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 4%;
+}
+
+.dThinking:hover span {
+    color: rgba(255, 255, 255, 0);
+}
+
+/* CUSTOMER FEEDBACK STYLES */
+#customerCard {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: flex;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+#customerCard img {
+    width: 10%;
+    height: 10%;
+}
+
+#customerCard p {
+    margin: 2rem;
+}
+
+#customerFeedback {
+    margin-top: 18rem;
+}
+
+/* BUSINESS MODEL */
+#busModel button {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #00806c;
+    width: 10rem;
+    height: 4rem;
+    color: white;
+    padding: 1rem;
+}
+
+/* PROYECCION DE LA EMPRESA */
+
 
 
 #loader video {
@@ -42,7 +259,160 @@ h1 {
 }
 
 .CanvasMain h2 {
-    font-size: 22px;
+    font-size: 18px;
+}
+
+.divider {
+    width: 100%;
+    height: 10vh;
+    fill: #00806d3f;
+}
+
+#top-left:hover~#innerTopLeft {
+    background-color: #ff7e5ea6;
+}
+
+#top-right:hover~#innerTopRight {
+    background-color: #ff7e5ea6;
+}
+
+#bottom-left:hover~#innerBottomLeft {
+    background-color: #ff7e5ea6;
+}
+
+#bottom-right:hover~#innerBottomRight {
+    background-color: #ff7e5ea6;
+}
+
+#innerTopLeft {
+    border-radius: 1rem;
+    position: absolute;
+    top: 17%;
+    left: 25.2%;
+    width: 19%;
+    height: 12%;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+#innerBottomLeft {
+    border-radius: 1rem;
+    position: absolute;
+    top: 90%;
+    left: 28%;
+    width: 17%;
+    height: 10%;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+#innerTopRight {
+    border-radius: 1rem;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    width: 29%;
+    height: 30%;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+#innerBottomRight {
+    border-radius: 1rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 29%;
+    height: 30%;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+#top-left {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+#top-right {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 83%;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+#bottom-left {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: -10rem;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+#bottom-right {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+/* PRODUCT RESPONSIVE */
+@media only screen and (max-width: 1240px) {
+    #bottom-right {
+        display: none;
+    }
+
+    #bottom-left {
+        display: none;
+    }
+
+    #top-right {
+        display: none;
+    }
+
+    #top-left {
+        display: none;
+    }
+}
+
+#cyanSection {
+    background-color: #00806d3f;
 }
 
 
@@ -80,6 +450,7 @@ h1 {
 
 #keyResources {
     background-color: #80ba6bb0;
+    height: 100%;
 }
 
 #channels {

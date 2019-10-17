@@ -75,7 +75,9 @@ window.onscroll = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         $("#BackToTopButton").fadeIn();
+        $("#cleanIndex").fadeIn();
     } else {
+        $("#cleanIndex").fadeOut();
         $("#BackToTopButton").fadeOut();
     }
 }

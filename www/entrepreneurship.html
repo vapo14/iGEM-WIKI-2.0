@@ -138,7 +138,7 @@
         </div>
     </div>
 </div> -->
-<div id="pullout-index">
+<!-- <div id="pullout-index">
     <div class="index" id="pullout">
         <div id="pullout-tab">
             <div>
@@ -190,7 +190,110 @@
             </ul>
         </div>
     </div>
+</div> -->
+
+<style>
+    .sidepanel {
+        width: 0;
+        z-index: 1;
+        height: fit-content;
+        left: 0;
+        background-color: whitesmoke;
+        border-radius: 1rem;
+        overflow-x: hidden;
+        -webkit-transition: width .5s;
+        transition: width .5s;
+        -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    }
+
+    .sidepanel a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        margin-left: .5rem;
+    }
+
+    .sidepanel a:hover {
+        color: #FF7D5E;
+    }
+
+    .sidepanel .closebtn {
+        position: relative;
+        top: -1rem;
+        right: 0;
+        font-size: 36px;
+    }
+
+    .IndexOpenbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #00806c;
+        color: white;
+        padding: 10px 15px;
+        border-style: none;
+        border-radius: 1rem;
+    }
+
+    .IndexOpenbtn:hover {
+        background-color: #016d5d;
+    }
+</style>
+<div style="position: fixed; top: 10vh; z-index: 999" id="cleanIndex">
+    <button class="IndexOpenbtn" onclick="openNav()">☰</button>
+    <div id="Sidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#designThinking">
+            Design Thinking
+        </a>
+        <a href="#BMCanvas">
+            Canvas
+        </a>
+        <a href="#SWOT">
+            SWOT Analysis
+        </a>
+        <a href="#Competition">
+            Competition
+        </a>
+        <a href="#Diagrams">
+            Diagrams
+        </a>
+        <a href="#productContainer">
+            Product
+        </a>
+        <a href="#customerFeedback">
+            Feedback
+        </a>
+        <a href="#busModel">
+            Business Model
+        </a>
+        <a href="#proy">
+            Projection
+        </a>
+        <a href="#Letters">
+            Letters
+        </a>
+        <a href="#Activities">
+            Activities
+        </a>
+        <a href="#Certificates">
+            Certificates
+        </a>
+    </div>
+
 </div>
+
+<script>
+    function openNav() {
+        document.getElementById("Sidepanel").style.width = "20rem";
+    }
+
+    function closeNav() {
+        document.getElementById("Sidepanel").style.width = "0";
+    }
+</script>
 
 <div class="container mainContainer">
     <div class="row" style="margin-top: -24rem; margin-bottom: 5rem">

@@ -1,6 +1,398 @@
-<!-- THIS IS OUR PAGE FUCK YEAH -->
-<div style="align-content: center; margin-left: auto; margin-right: auto">
-    <h1>
-        hi :3
-    </h1>
+<!-- dude its like 2AM and im so tired 
+     how does code?-->
+
+<link rel="stylesheet" href="css/wiki.css">
+<header style="margin-bottom: 0;">
+    <div class="headerContainer">
+        <video autoplay muted loop id="myVideo">
+            <source src="img/citfondo.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            </source></video>
+        <div id="bannersection">
+            <div class="bannercontent">
+                <h1 class="mainHeader">Wiki</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" style="margin-top: 8rem;">
+    <div class="row text-center">
+        <h1 style="font-size: 75px;">How Does Code?</h1>
+        <h2>A Guide For Wiki Development</h2>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Overview</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                The default iGEM wiki setup offers predefined web design implementations. It has a series of CSS classes
+                and ID’s that help teams customize the default template. However, it is more than likely that teams are
+                going to prefer a completely customized/personalized wiki template. And achieving this seamlessly is a
+                bit of a hassle. That is why we decided to create this page. Hopefully, we can help other iGEM teams
+                make full use of the wiki infrastructure with the knowledge that we acquired throughout the competition.
+                This guide assumes that you have at least some experience with web development, this includes HTML, CSS,
+                and Javascript. If you have a basic understanding of these principles, then this guide will help you
+                implement your skills faster, and easier, in order to prevent you from freaking out in the last days
+                before the Wiki Freeze. This guide is for you. Let’s dive in!
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Setup</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                For this year’s wiki, our team used a series of web development environments in order to create the
+                design locally on a server, then upload the final result to the iGEM servers. Some of the tools we used
+                are the following:
+            </p>
+
+            <ul>
+                <li>Node.js (for local server hosting)</li>
+                <li>Harp.js (for compiling our HTML, CSS and JS code separately)</li>
+                <li>Visual Studio Code (a multipurpose and simple IDE)</li>
+                <li>Git, GitHub (for having backups of our code in case we messed up, it also works for syncronizing
+                    workloads)</li>
+            </ul>
+            <p>
+                All of these tools are free to download and implement. They are fairly easy to use and with a couple of
+                YouTube videos, you should be ready to go. Note that these tools are not necessary for the creation of
+                your wiki, but they do make things a lot faster and easier.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Create, don’t hate.</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Once you have implemented these tools you can begin with the design of your wiki. What we recommend when
+                working with the rest of your team is to ask them for specific details of what the page should contain.
+                For example, let’s say we want to design the Public_Engagement page of our wiki. For this, we should
+                talk with our team members about what we want the page to look like. Maybe you want loads of pictures to
+                represent every activity and place you visited. In that case, you know you have to work on a collage
+                design or maybe an image grid. This can help you determine how long it will take you to code the page,
+                and thus it helps with time management.
+            </p>
+            <p>
+                There are millions of sources where you can get inspiration for your code, whether it be logical or
+                visual. Some of these sites include:
+            </p>
+
+            <ul>
+                <li>CodePen.io</li>
+                <li>W3Schools</li>
+                <li>CSS-tricks</li>
+            </ul>
+            <p>
+                These web pages are bound to be your best friends during your web development endeavors. W3schools
+                offers a series of tutorials on how to use and implement several different tools. They also provide an
+                editor, so you can edit and view your changes in real-time. CodePen is a service that provides the users
+                with the ability to upload free to use code snippets. Most of these are pretty clever and can help guide
+                you to create pretty cool effects. It also has a live editor. Finally, css-tricks is a webpage that
+                provides hints and tricks for pure CSS development. It can help you design some really good-looking
+                effects and styles. Youtube videos and stack-overflow code snippets can also solve your problems when
+                it’s starting to seem like the end of the world.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Responsive</h1>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center;">Does it like, talk back?</h2>
+        <div class="col-md-12">
+            <p>
+                No, responsive design doesn’t mean that your wiki will talk back to you. Actually, responsive design
+                refers to the ability of a page to respond to different screen sizes. Why is this helpful? Let’s suppose
+                you want to take a quick look at another team’s wiki for information on their project and you don’t have
+                a laptop or computer with you. You pull out your phone and open their wiki only to find that the text is
+                completely covered by their logo, the rest of the text is split in half and you can’t read any of it.
+                This means that the page is not responsive. If you don’t want that to happen to your wiki, we can help.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center;">The Bootstrap Framework</h2>
+        <div class="col-md-12">
+            <p>
+                Bootstrap is a web development framework that helps design responsive websites. You can use this to
+                create your wiki and it will display on computers, tablets, and phones with only one block of code. If
+                you search for Bootstrap implementations online you’ll notice that many examples use a simple
+                &lt;link&gt; tag with the source being an outside URL. However, iGEM requires that you host everything
+                on
+                their platform. This means that you have to download the Bootstrap CSS and JS files and upload them. In
+                reality, the only files you need are “bootstrap.min.css” and “bootstrap.min.js”. We will explain how to
+                include CSS and JS into your wiki further down.
+            </p>
+            <p>
+                To learn how to use Bootstrap we recommend that you check their official documentation at
+                <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> or you can also find examples on how
+                to use it in <a href="www.w3schools.com">www.w3schools.com</a>.
+            </p>
+            <p>
+                Bootstrap not only offers responsive design implementations, but it also provides several web templates.
+                You can create navigation bars, modals, popovers, carousels, and many other cool components. Also, if
+                you happen to not have any time at all to code your own wiki, you can use one of the full-webpage
+                Bootstrap templates. In any case, this framework is going to make your job easier.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>I don’t like your style</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                I think we can all agree that the default wiki template is a bit bland. And if you really want to show
+                your design and development skills, there are several things that you have to consider. Let’s begin with
+                the very basics.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center;">Including custom CSS</h2>
+        <div class="col-md-12">
+            <p>
+                At the beginning of every HTML code, you should include a
+                &lt;link&gt; tag that links to a CSS file. This in order to style your HTML elements. Here’s a step by
+                step
+                list to create and include a CSS file:
+            </p>
+            <ul>
+                <li>Create a template using this link: <i>YEAR</i>.igem.org/Template:<i>OFFICIAL team name/Template
+                        Name</i> (replace
+                    the italics with your own team data)
+                    <ul>
+                        <li>Try to use a standard nomenclature for your templates, it will help you keep track of all of
+                            your different templates.</li>
+                    </ul>
+                </li>
+                <li>You will be greeted with this page:
+                </li>
+                <li>Click on the “Edit this page” link</li>
+                <li>It will open up an editor</li>
+                <li>Paste your custom CSS code in that template.</li>
+                <li>Before saving the file, copy the current URL and save it for later:
+                    <ul>
+                        <li>https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/customCSS&action=edit</li>
+                    </ul>
+                </li>
+                <li>Save the page.</li>
+                <li>Go to the HTML page where you want to link this custom CSS file</li>
+                <li>Write the link tag like you normally would.</li>
+                <li>Paste the link that you copied earlier in the link tag source.</li>
+                <li>Change the last part of the link to the following: “/customCSS&action=raw&ctype=text/css”</li>
+                <li>It should look somewhat like this
+                    <ul>
+                        <li>
+                            https://2019.igem.org/wiki/index.php?title=Template:Tec-Chihuahua/customCSS&action=raw&ctype=text/css
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Now you have successfully included your custom CSS file. <strong>This next part is important:</strong>
+                the state of the
+                iGEM pages is stored on your browser cache. This means that if you make changes to your CSS file and try
+                to refresh the page, you will not see the changes take place. In order to view the changes you have to
+                clear your cache for that page. You can either do it through the browser settings or use the shortcut:
+                Ctrl + F5 on Windows, and Command + F5 on Mac. F5 won’t do the trick because the browser will still use
+                the data stored in cache. Helpfull little trick for you ;)
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align: center;">Including JS files</h2>
+            <p>
+                For including JS code to your wiki you will follow the exact same steps as the CSS inclusion, but a few
+                things change:
+            </p>
+            <ul>
+                <li>
+                    You will use a &lt;script &gt; tag instead of a
+                    &lt;link&gt; tag.
+                </li>
+                <li>Instead of changing the link to “/customCSS&action=raw&ctype=text/css” you will use
+                    “/customJS&action=raw&ctype=text/javascript”</li>
+            </ul>
+            <p>
+                That’s it! Don’t forget your template URLs! Whenever you want to change your CSS or Javascript you will
+                need to open them and edit them. So make sure to paste them into a .txt file on your computer or on a
+                notepad in order to have them always available. If you forget, you can always use your browser history.
+                Assuming you don’t clear it every once in a while.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row">
+        <h1 style="text-align: center;">Pointers on CSS Specificity</h1>
+        <div class="col-md-12">
+            <p>
+                The iGEM wiki infrastructure will place your code inside several containers. The inner-most
+                container is
+                a &lt;div&gt; with an id of “bodyContent”. In order to override the default iGEM template styles you
+                need to
+                target the items with a specificity of id=”bodyContent” or higher. What do we mean by this?
+                Basically, if you try to style your &lt;p&gt; (paragraph) tags with the general <code>p { /*styles*/
+                    }</code> rule,
+                it
+                will be overwritten by whatever iGEM has on their templates because they are targetting
+                paragraphs with id’s. To make your life simpler, be as specific as possible in order for your
+                custom CSS to work at first try. Use id’s instead of classes or a mixture of both if possible.
+            </p>
+        </div>
+        <h1 style="text-align: center;">Override iGEM Team Header</h1>
+        <div class="col-md-12">
+            <p>
+                One of the things that you will probably attempt at doing is eliminating this white banner that is
+                located on every page and won’t disappear even if you delete the code of the page. Here is a short style
+                for you to get rid of that banner, make sure it doesn’t interfere with what you already have before
+                inserting it:
+            </p>
+            <code>
+                #home_logo,
+                #sideMenu {
+                display: none;
+                }
+
+                #sideMenu,
+                #top_title,
+                .patrollink {
+                display: none;
+                }
+
+                #content,
+                #HQ_page {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                background-color: white;
+                //font-size: 100% !important;
+                }
+
+                #content {
+                margin-top: -4rem;
+                overflow-y: hidden;
+                }
+
+                #globalWrapper,
+                #content,
+                #HQ_page,
+                #bodyContent,
+                #mw-content-text {
+                height: 100%;
+                width: 100%;
+                margin-bottom: -1rem;
+                }
+                #globalWrapper{
+                padding-bottom: 0;
+                margin-bottom: -2rem;
+                overflow-y: hidden;
+                }
+
+                .mw-body {
+                overflow-x: hidden;
+                overflow-y: hidden;
+                }
+
+            </code>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row">
+        <h1 style="text-align: center;">Ctrl + Z, CTRL + Z, CTRL + Z!!!!!!!</h1>
+        <div class="col-md-12">
+            <p>
+                By this time you’ve probably made a mistake on a page and now it looks like a newbie trying to play
+                Tetris. Don’t fret my friend! Wiki Tools has got your back!
+            </p>
+            <ul>
+                <li>Go to the Wiki Tools tab on the iGEM navigation bar.</li>
+                <li>Click history</li>
+                <li>You will see a listing of every change you made on the current page and a link to every change.
+                    Click on the link with the date you want to go back to. Like a Time Machine!</li>
+                <li>It will take you to the page before the change was made. Note that this doesn’t reset the page, you
+                    have to save it. </li>
+                <li>Just click edit, and save. And done! Your page is back to how it was.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row">
+        <h1 style="text-align: center;">Upload Files</h1>
+        <div class="col-md-12">
+            <p>
+                Uploading your files is pretty straight forward:
+            </p>
+            <ul>
+                <li>Go to the iGEM navigation bar > Wiki Tools</li>
+                <li>Click on the Upload Files link</li>
+                <li>Once on the page you can choose the file you want to upload.
+                </li>
+                <li>Remember that the required nomenclature for your files is the following: <strong>
+                        [capital T] [hyphen]
+                        [hyphen] [official_team_name_with_underscores_and_no_spaces] [hyphen] [hyphen]
+                        [filename_and.extension]
+                    </strong>
+                </li>
+                <li>Click upload and you’re done.
+                </li>
+            </ul>
+            <p>
+                Some files can show a preview when you upload them and others can’t, so if your image doesn’t show a
+                preview dont panic. Just click on the link below that says original file and you can view it there. Note
+                that this is the URL that you are going to use to include it in your &lt;img&gt; tag.
+            </p>
+            <p>There is also a list of uploaded files, where you can search your files by name or by the username of the
+                person who uploaded it, an upload log and a deletion log.
+            </p>
+            <h2 style="text-align: center;">Official Documentation</h2>
+            <p>
+                Official Documentation
+                If you don’t completely trust what is written here or want to know more about the iGEM wiki
+                infrastructure, visit the official documentation at <a
+                    href="https://2019.igem.org/Resources/Wiki_Editing_Help">https://2019.igem.org/Resources/Wiki_Editing_Help</a>.
+            </p>
+            <p>
+                The resources page also includes more tips on how to edit the wiki or use the default templates.
+            </p>
+        </div>
+    </div>
 </div>

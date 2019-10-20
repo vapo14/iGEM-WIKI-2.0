@@ -1,14 +1,188 @@
-/* --------------------------------
-
-Primary style
-
--------------------------------- */
-
-
-a {
-    color: #7b9d6f;
-    text-decoration: none;
+#boxContainer {
+    border-radius: 1rem;
+    margin-top: 8rem;
+    padding: 4rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
 }
+
+#parallelogram {
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+    position: absolute;
+    top: -10rem;
+    z-index: -1;
+}
+
+#parallelogram::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: white;
+    position: absolute;
+    transform: skew(-80deg);
+    /* transform-origin: bottom; */
+    background: #fff;
+}
+
+#crops {
+    position: absolute;
+    width: 20rem;
+    height: 40rem;
+    left: 35.1rem;
+    top: 3%;
+}
+
+
+#cropscontainer {
+    position: absolute;
+    display: none;
+    top: 0;
+    max-width: 50rem;
+    right: -8rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -webkit-transition: visibility 400ms linear;
+    -moz-transition: visibility 400ms linear;
+    -o-transition: visibility 400ms linear;
+    -ms-transition: visibility 400ms linear;
+    transition: visibility 400ms linear;
+}
+
+#crops:hover~#cropscontainer {
+    display: block;
+}
+
+#harvest {
+    position: absolute;
+    width: 65rem;
+    height: 40rem;
+    left: 10rem;
+    top: 24%;
+}
+
+#harvestcontainer {
+    position: absolute;
+    display: none;
+    top: 50rem;
+    max-width: 50rem;
+    right: -8rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -webkit-transition: visibility 400ms linear;
+    -moz-transition: visibility 400ms linear;
+    -o-transition: visibility 400ms linear;
+    -ms-transition: visibility 400ms linear;
+    transition: visibility 400ms linear;
+}
+
+#harvest:hover~#harvestcontainer {
+    display: block;
+}
+
+
+#ginning {
+    position: absolute;
+    width: 25rem;
+    height: 40rem;
+    left: 29rem;
+    top: 44%;
+}
+
+#ginningcontainer {
+    position: absolute;
+    display: none;
+    top: 90rem;
+    max-width: 50rem;
+    right: -8rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -webkit-transition: visibility 400ms linear;
+    -moz-transition: visibility 400ms linear;
+    -o-transition: visibility 400ms linear;
+    -ms-transition: visibility 400ms linear;
+    transition: visibility 400ms linear;
+}
+
+#ginning:hover~#ginningcontainer {
+    display: block;
+}
+
+#deseed {
+    position: absolute;
+    width: 25rem;
+    height: 40rem;
+    left: 0;
+    top: 64%;
+}
+
+#deseedcontainer {
+    position: absolute;
+    display: none;
+    top: 110rem;
+    max-width: 50rem;
+    right: -12rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(54, 53, 53, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -webkit-transition: visibility 400ms linear;
+    -moz-transition: visibility 400ms linear;
+    -o-transition: visibility 400ms linear;
+    -ms-transition: visibility 400ms linear;
+    transition: visibility 400ms linear;
+    z-index: 99;
+}
+
+#deseed:hover~#deseedcontainer {
+    display: block;
+}
+
+#unwinding {
+    position: absolute;
+    width: 25rem;
+    height: 40rem;
+    left: 49rem;
+    top: 64%;
+}
+
+#unwindingcontainer {
+    position: absolute;
+    display: none;
+    top: 140rem;
+    max-width: 50rem;
+    right: -12rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -webkit-transition: visibility 400ms linear;
+    -moz-transition: visibility 400ms linear;
+    -o-transition: visibility 400ms linear;
+    -ms-transition: visibility 400ms linear;
+    transition: visibility 400ms linear;
+    z-index: 99;
+}
+
+#unwinding:hover~#unwindingcontainer {
+    display: block;
+}
+
 
 /* --------------------------------
 

@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="css/characterization.css">
+
+<header style="margin-bottom: 0;">
+    <div class="headerContainer">
+        <div class="imgContent"></div>
+        <div id="bannersection">
+            <div class="bannercontent">
+                <h1 class="mainHeader">Characterization</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="row text-center">
+        <h1>Overview</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                To test the functionality of the lacI regulated promoter used in our BioBricks when used in the <i>E.
+                    coli</i>
+                SHuffle expression strain, our team characterized the following parts:
+                <ul>
+                    <li><a href="http://parts.igem.org/Part:BBa_R0010">BBa_R0010</a> Promoter (lacI regulated)</li>
+                    <li><a href="http://parts.igem.org/Part:BBa_J04450">BBa_J04450</a> RFP Coding Device</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>
+            Introduction
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Since two of the peptides involved in our project, PsDef1 and WAMP1b, contain multiple disulfide bonds,
+                proper protein folding is required. Different approaches were considered to achieve this which include
+                looking for a proper promoter for our BioBricks. The usage of inducible promoters is ideal to avoid
+                unwanted characteristics in recombinant proteins<sup>1</sup>, such as inclusion bodies. It has been
+                shown that
+                regulated promoters yield higher quantities of soluble proteins<sup>2</sup>. Thus, we designed our
+                composite parts
+                for these two peptides under the regulation of part BBa_R0010, a lacI regulated promoter inducible by
+                IPTG.
+            </p>
+            <p>
+                Another aspect we considered was choosing the ideal expression chassis. <i>E. coli</i> SHuffle T7
+                Express®️
+                form New England BioLabs®️ was chosen for its ability to produce disulfide bonded proteins in its
+                cytoplasm. However, no information was found in the Registry about the usage of part BBa_R0010 in
+                SHuffle strains. In order to test this lacI regulated promoter in our chassis, we transformed part
+                BBa_J04450, which expresses RFP under this promoter, into <i>E. coli</i> SHuffle T7 Express®️.
+            </p>
+            <p>
+                We successfully characterized parts BBa_R0010 and BBa_J04450. RFP expression was induced in different
+                temperature conditions and IPTG concentration to determine the ideal conditions for the proper
+                functionality of the promoter. Protein expression was analysed through an SDS-PAGE. Thus, we have added
+                information to the Registry for future teams who wish to use SHuffle®️ strains in their projects.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>
+            Experimentation
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                First, 3 μL of the 10 pg/μL vial of Part BBa_J04450 (RFP construct) from the Competent Cell Kit were
+                transformed into chemically competent <i>E. coli</i> SHuffle T7 Express®️ cells. Transformed cells were
+                grown
+                on LB agar with chloramphenicol, for BBa_J04450 was located in the pSB1C3 backbone. Small, rounded, and
+                red colonies grew on the surface of the agar.
+            </p>
+            <!-- IMAGE  -->
+            <p style="text-align: center;"><strong>Figure 1.</strong> <i>E. coli</i> SHuffle T7
+                Express®️ transformed with
+                BBa_J04450 grown on LB
+                Agar.
+            </p>
+            <p>
+                Once the expression chassis was transformed, protein expression was induced. To do so, two tubes of 10
+                mL of liquid culture of untransformed <i>E. coli</i> SHuffle T7 Express®️ and six of SHuffle cells
+                transformed
+                with BBa_J04450 were prepared. Once the tubes reached an OD600 of 0.4, they were incubated for 5 hours
+                under the conditions of temperature and IPTG concentration shown in the following table.
+            </p>
+            <!-- TABLE -->
+            <p>
+                Induction temperatures were chosen based on commonly used conditions (37°C) and recommendations of the
+                supplier (30°C). The uninduced control consists of transformed cells without IPTG which meant to serve
+                as an indicator of leakiness in the promoter. IPTG concentrations were chosen based on conditions that
+                had worked previously for us when using a T7 promoter (0.2 mM) and recommendations of the supplier (0.4
+                mM).
+            </p>
+            <p>
+                After 5 hours of incubation at 225 rpm, cells were centrifuged at 5000 rpm and 4°C for 7 minutes. The
+                pellet was resuspended in a lysis solution with lysozyme and cells were lysed through multiple
+                freeze/thaw cycles. The cell lysates were centrifuged at 21,380 g to separate the soluble protein
+                fraction (supernatant) which was retrieved for its evaluation and quantification. 10 μL of each sample
+                with 50 μg of total protein were mixed with 10 μL of SDS loading buffer and loaded into a 12%
+                polyacrylamide gel. The gel was ran at 10 mA until the running front entered the separating gel; then,
+                the current was increased to 15 mA.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Results</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                The following image shows the results obtained from the SDS-PAGE.
+            </p>
+            <!-- IMAGE -->
+            <p style="text-align: center;">
+                <strong>Figure 2.</strong> SDS-PAGE (12%) of <i>E. coli</i> SHuffle T7 Express®️ transformed with
+                BBa_J04450.
+            </p>
+            <p>
+                Two prominent bands can be appreciated in the last two columns, corresponding to induction conditions of
+                0.2 and 0.4 mM IPTG at 30°C, close to the 25 kDa band of the Precision Plus ProteinTM Dual Xtra
+                Prestained Protein Standards. It was concluded that this correspond to RFP, a 26 kDa protein.
+            </p>
+            <p>
+                When taking a closer look, the band corresponding to RFP can be seen in each column with exception of
+                the untransformed cells controls. The uninduced controls without IPTG were expected not to show bands if
+                the promoter lacked leakiness; nevertheless, a faint band can be seen for both controls. Bands
+                corresponding to 0.2 and 0.4 mM IPTG for both temperatures show stronger bands compared to the uninduced
+                control. Thus, the promoter is slightly leaky, but the addition of proper amounts of IPTG increases
+                protein production. When comparing temperatures, incubation at 30°C clearly yields a higher amount of
+                RFP, but yields similar amounts of expression between both concentrations.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <h1>Conclusions</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Our team has added relevant information to the Registry for future teams who might want to use a SHuffle
+                strain in their projects. We have demonstrated the functionality of promoter BBa_R0010 in <i>E. coli</i>
+                SHuffle T7 Express®️ as well as ideal conditions for protein production by characterizing part
+                BBa_J04450, an RFP construct. <i>E. coli</i> SHuffle T7 Express®️ produces higher amounts of protein at
+                30°C,
+                and concentrations of 0.2 and 0.4 mM IPTG are enough to induce expression when using this lacI regulated
+                promoter.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container shadow mainContainer" style="margin-top: 4rem; margin-bottom: 4rem;" id="references">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>References</h2>
+            <ol>
+                <li>
+                    Banerjee, A., Leang, C., Ueki, T., Nevin, K. P., & Lovley, D. R. (2014). Lactose-inducible system
+                    for
+                    metabolic engineering of Clostridium ljungdahlii. <i>
+                        Applied and environmental microbiology, 80(8),
+                        2410–2416.
+                    </i> doi:10.1128/AEM.03666-13
+                </li>
+
+                <li>
+                    Terpe, K. (2006). Overview of bacterial expression systems for heterologous protein production: from
+                    molecular and biochemical fundamentals to commercial systems. <i>
+                        Applied microbiology and
+                        biotechnology,
+                        72(2), 211.
+                    </i> doi: 10.1007/s00253-006-0465-8
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

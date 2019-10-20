@@ -14,3 +14,19 @@
     -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
 }
+
+#legal button {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #00806c;
+    width: 10rem;
+    height: 4rem;
+    color: white;
+    padding: 1rem;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+#legal button:hover {
+    background-color: #006657;
+}

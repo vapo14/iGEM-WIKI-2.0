@@ -21,12 +21,670 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero a repellat voluptas doloribus ipsam
-                quia quis optio maxime, explicabo voluptatem soluta unde! Deleniti excepturi placeat voluptate adipisci
-                nihil. Debitis, eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, tenetur, aut
-                optio quam dolorem fugit libero quod labore similique officia eligendi ut ratione quis porro?
-                Consequatur quis odit accusantium iusto?
+                Our projects objective is finding an effective treatment for <i>Verticillium dahliae</i> on cotton crops
+                that
+                can replace current agrochemicals. Taking advantage of our community’s closeness with the cotton
+                industry, we decided to reach out to agronomical engineers, cotton producers, doctors, and other experts
+                on the topic to work out the perfect solution. Taking into consideration their feedback and the
+                customers comfort, a conclusion was reached that, due to <i>V. dahliae</i> infection mechanisms, our
+                fungicide
+                must be both a preventive and treating product that could be apply through the irrigation system.
             </p>
+            <p>
+                In order to fulfill our sought goal, through several days of investigations, brainstorming, and
+                troubleshooting, we developed the design of V-TION: a systemic, preventive, and treating biopesticide
+                against Verticillium wilt with three recombinant plant defense peptides as its active ingredient.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>How We Chose Our Peptides</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                The inspiration of considering peptides as our active ingredient came from the recent interest in their
+                usage as an alternative to current pesticides and antibiotics. Since antimicrobial peptides are
+                effective against various pathogens including fungi, they have been hypothesized as a possible
+                replacement to pest-control chemicals that can be hazardous for the environment and the
+                consumer.<sup>1</sup>
+            </p>
+            <p>
+                In order to make an optimal biopesticide, we chose 3 specific peptides from plant innate defense
+                systems:
+            </p>
+            <ul>
+                <li><i>Arabidopsis thaliana profilin 1 (AtPFN1).</i></li>
+                <li><i>Pinus sylvestris defensin 1 (PsDef1).</i></li>
+                <li>Wheat antimicrobial peptide 1b (WAMP1b).</li>
+            </ul>
+            <p>
+                They were chosen because each one counts with a different action mechanism. When used together in our
+                fungicide, they can work collaboratively to generate an overall stronger antifungal effect that will
+                inhibit <i>V. dahliae</i> at different stages of its life cycle.
+            </p>
+            <p><strong>AtPFN1</strong></p>
+            <p>
+                The first stage of V. dahliae’s life cycle is the dormant phase. During this period the fungus survives
+                as
+                microsclerotia in soil during unfavorable conditions. The microsclerotia germinate in the presence of
+                root
+                exudates. Eventually, it enters and spreads through the by mycelium or spores.<sup>2</sup> Thanks to its
+                ability to
+                permeabilize the cell wall and membrane of fungal spores and hyphae, AtPFN1 can act during this early
+                stage.<sup>3</sup>
+            </p>
+            <p><strong>PsDef1</strong></p>
+            <p>
+                During the parasitic stage, the fungus invades the plant and its tissues become necrotic because the
+                vascular tissue is clogged by mycelia and conidia.<sup>4</sup> PsDef1 is able halt fungal growth by
+                causing
+                morphological changes on the mycelium.<sup>5</sup> It was chosen due to its functionality against
+                mycelium and its
+                potential during this stage.
+            </p>
+            <p><strong>WAMP1b</strong></p>
+            <p>
+                When afflicted by fungal disease, plants can fight back by producing chitinases, enzymes that bind and
+                cleave hyphal chitin. Then, some fungi, like <i>V. dahliae</i>, produce fungalysin, a metalloprotease
+                that
+                specifically cleaves and inactivates chitinases, suppressing its function. On the other hand, plants
+                like
+                wheat express WAMPs that bind to fungalysin and inhibit its activity. This way, chitinases remain active
+                to
+                suppress the effect of the pathogen.<sup>6, 7</sup> Our biofungicide will include WAMP1b among its
+                active ingredients
+                to imitate this system and suppress V. dahliae’s defense mechanisms.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>Genetic Design</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Once we had chosen our peptides, important considerations were taken to build the perfect DNA construct
+                that would allow us to express them recombinantly. <i>E. coli</i> was chosen as an expression chassis
+                for its
+                availability and growth simplicities. However, two of our peptides, PsDef1 and WAMP1b, contain multiple
+                disulfide bonds which are modifications hard to replicate in prokaryotic expression systems. Disulfide
+                bonds are involved in the structural and catalytic activity of proteins; besides, misfolding of these
+                bonds can cause the formation of aggregation bodies and low yields of protein production.<sup>8</sup>
+                Our BioBricks
+                were designed to foment the correct folding of these peptides in the right chassis.
+            </p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>Chassis</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p><strong><i>E. coli</i> BL21 (DE3)</strong></p>
+            <p>
+                This strain was chosen as a chassis for the expression of AtPFN1. BL21 strains lack the expression of
+                Lon and OmpT proteases which generates conditions more favorable for recombinant protein
+                production.<sup>9</sup>
+            </p>
+            <p><strong><i>E. coli</i> Shuffle</strong></p>
+            <p>
+                The cytoplasm of wild-type <i>E. coli</i> is an unfavorable environment for the production of
+                disulfide-bonded
+                proteins due to the presence of reductases and reducing agents. To solve this issue, <i>E. coli</i>
+                Shuffle
+                strains lack two reducing pathways and express DsbC, a disulfide bond isomerase, in the cytoplasm to
+                generate properly folded disulfide-bonded proteins.<sup>10</sup> For the expression of both PsDef1 and
+                WAMP1b, <i>
+                    E.
+                    coli
+                </i> Shuffle T7 Express from New England BioLabs.
+            </p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>Promoters</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p><strong>T7 Promoter</strong></p>
+            <p>
+                The usage of inducible promoters is ideal to avoid unwanted characteristics in recombinant
+                proteins<sup>11</sup>,
+                such as inclusion bodies. It has been shown that regulated promoters yield higher quantities of soluble
+                proteins<sup>12</sup>. For the BioBrick for AtPFN1, the T7 promoter was chosen because it can be
+                positively
+                regulated through the addition of isopropyl β-D-1-thiogalactopyranoside or IPTG. DNA sequences
+                downstream of a T7 promoter are transcribed by a T7 RNA polymerase whose expression is induced by the
+                addition of IPTG when working with certain chassis such as <i>E. coli</i> BL21 (DE3).<sup>13</sup>
+            </p>
+            <p><strong>LacI regulated Promoter</strong></p>
+            <p>
+                The T7 promoter is a strong promoter ideal for protein expression induction; nevertheless, excessive
+                production can cause mis-folding and the formation of aggregation bodies.<sup>14</sup> Since proper
+                folding of our
+                disulfide-bonded peptides was an important aspect of our genetic design, we opted to use a lacI
+                regulated promoter from the Parts Registry, a weaker yet effective promoter and positively induced by
+                IPTG, for the expression of PsDef1 and WAMP1b.
+            </p>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2>More Features</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p><strong>6x His-Tag</strong></p>
+            <p>
+                The addition of a 6x histidine tag to our peptides has the purpose of allowing their purification by
+                immobilized metal affinity purification (IMAC). A 6x His-Tag consist of six histidine residues at the N
+                or C terminus of a recombinant protein. Due to its positive charge, histidine has an affinity for metal
+                ions, for example Ni<sup>2+</sup>. IMAC columns allow the isolation of histidine tagged proteins from
+                other
+                compounds in a cell lysate thanks to the metal ions immobilized in a resin inside the
+                columns.<sup>15</sup>
+            </p>
+            <p><strong>Erv1p</strong></p>
+            <p>
+                Erv1p is a protein from <i>Saccharomyces cerevisiae</i> that shows a flavin-linked sulfhydryl oxidase
+                enzymatic
+                activity. This means that it’s capable of oxidizing thiol groups in proteins and catalyzing disulfide
+                bond formation.<sup>16</sup> It has been shown that, thanks to its ability to form disulfide bonds <i>
+                    de
+                    novo
+                </i>,
+                co-expression of Erv1p allows the proper formation of disulfide bonded proteins in the cytoplasm of <i>
+                    E.
+                    coli
+                </i>.<sup>17</sup> Besides the BioBricks for PsDef1 and WAMP1b, an additional two were designed to
+                co-express them
+                along with Erv1p.
+            </p>
+            <p>Visit our <a href="/Team:Tec-Chihuahua/Parts">Parts</a> page for more information.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>From the Lab to the Field</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>In order to turn our peptides into a product that can be applied on cotton crops, the following steps
+                will be carried out:</p>
+            <ul>
+                <li>Transformation of E. coli chassis with our expression vectors</li>
+                <li>IPTG protein induction</li>
+                <li>Soluble protein extraction</li>
+                <li>Purification by immobilized metal affinity chromatography</li>
+                <li>Nanoencapsulation</li>
+                <li>Packaging</li>
+                <li>Delivery through the irrigation system</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>Nanoencapsulation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Conventional agrochemical application methods usually result in an intended product overdose, with the
+                purpose of ensuring that the active ingredient (AI) is delivered in sufficient quantities where it is
+                needed.
+            </p>
+            <p>
+                Unfortunately, more than 90% of the pesticides applied are lost in the environment or are unable to
+                reach the target organism, which causes an increase in cost and more importantly in environmental
+                pollution. Nanotechnology, a science focused on the development of materials on a scale of 1nm to 100nm,
+                allows the nanoencapsulation of pesticides and fertilizers for a more effective and efficient AI
+                release.<sup>18</sup>
+            </p>
+            <p>
+                Nanoencapsulation consists of the packaging of solid, liquid or gaseous substances in capsules composed
+                of various materials that confer specific properties such as: efficient delivery, controlled release,
+                greater protection against UV rays, greater solubility and stability, among many others.<sup>19</sup>
+            </p>
+            <p><strong>Our nanocapsule</strong></p>
+            <p>
+                One of the most common materials for nanoencapsulation is the chitosan (CS) copolymer, composed of
+                glucosamine and N-acetylglucosamine. Among its main characteristics are high biocompatibility,
+                biodegradability, low immunogenicity and several biological activities. Given its properties, its use is
+                feasible in the field of agriculture, food and medical industry. On the other hand, polylactic acid
+                (PLA) has been another copolymer widely used in drug delivery systems, since it is of a biodegradable
+                nature and has low hydrophilicity.<sup>20</sup>
+            </p>
+            <p>
+                Recently a nanocapsule has been developed from the chitosan-polylactice (CPLA) copolymers, leading to an
+                improvement in the physicochemical properties and biodegradability of the components. Similarly, by
+                controlling the relationship between both polymers, it is possible to obtain a hydrophobic-hydrophilic
+                balance.<sup>21</sup>
+            </p>
+            <p>
+                Moreover, the basic character of chitosan is capable of neutralizing acid degradation by polylactic acid
+                products. Also, through several studies, the use of CS and PLA nanocapsules has been tested for
+                encapsulation of both proteins and peptides.<sup>22, 23</sup>
+            </p>
+            <p>
+                As for the release of the active ingredients, the CPLA nanocapsule is characterized by being easily
+                degraded in an alkaline environment, indicating a pH-regulated release. Experiments have shown a release
+                rate at a pH of 8.54, of 75% over a period of 10 hours.<sup>24</sup> Alluvial soils of cotton crops,
+                have a pH from
+                6.5 to 9.<sup>28</sup> This means that, for WAMP 1b, PsDef and AtPFN1 peptides, the nanocapsule provides
+                a gradual
+                release.
+            </p>
+            <p>
+                Therefore, based on the previous information, the delivery of V-TION is proposed through a CPLA
+                nanocapsule, providing a pH-regulated release and protection against photodegradation.
+            </p>
+            <p><strong>General characteristics </strong></p>
+            <p>
+                Since its components are both hydrophobic and hydrophilic, the resulting nanocapsule is considered
+                amphiphilic. This property promotes the formation of micellar structures, and provides a stabilizing
+                interface between the nucleus of the nanoparticle and the aqueous environment. Also, Nano-mycelia work
+                better than surfactants. The above is especially helpful because a hydrophobic protection will be able
+                to prevent the dispersion of our peptides when applied by irrigation.<sup>24</sup>
+            </p>
+            <p><strong>Photodegradation </strong></p>
+            <p>
+                In addition to this, it is important to consider that the soil on which cotton is developed has optimal
+                temperatures of 27°C - 32°C. However, temperatures of up to 44°C have been reported.<sup>25</sup>
+                Individually,
+                chitosan has a melting point of 88°C, while polylactic acid withstands temperatures up to 160°C.
+                Overall, the nanocapsule made from both materials has been exposed to irradiation using a 16 W
+                ultraviolet lamp for 150 min, verifying that its usage largely prevents the degradation of the active
+                compound.<sup>24, 26, 27</sup>
+            </p>
+            <p><strong>Biodegradability and toxicity</strong></p>
+            <p>
+                Finally, you cannot overlook the environmental impact. Taking this into account, another of the great
+                advantages of nanoencapsulation with chitosan and polylactic acid is its high biodegradability and
+                virtually nonexistent toxicity.
+            </p>
+            <p>
+                There have been identified organisms, from prokaryotes to animals, plants and yeasts, that have a wide
+                variety of enzymes capable of degrading chitosan. When this degradation occurs, amino-sugars or
+                non-toxic compounds are released. Likewise, CS is also considered a biocompatible compound, that means
+                that when in contact with a living system it has no adverse effects. An LD50 toxicity of 16 g/kg has
+                been reported, which is similar to the toxicity of salt and sugar; this is considered minimal toxicity
+                and is safe for both plants and animals.<sup>20</sup>
+            </p>
+            <p>
+                As for polylactic acid, it is biodegradable, meaning it degrades naturally when exposed to the
+                environment. In addition to its low toxicity, it has been approved by the US Food and Drug
+                Administration.<sup>27, 29</sup>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container" id="boxContainer">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>Inert Ingredients Formulation</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                After nanoencapsulation, this leads to a lyophilization process that would allow the presentation of a
+                wettable powder (WP) type product. The WP formulation is a powder capable of forming a suspension while
+                being mixed with water before its application. WP formulations are composed by one or more active
+                ingredients that are combined or mixed with inert substances, diluents and surfactants. In this case,
+                wetting agents are used to help with the suspension of water particles. A dispersing agent is also added
+                to avoid flocculation of the suspension before its application.<sup>30</sup>
+            </p>
+            <p>
+                First, the right humectant is needed for the production of the powder. In this case, the agent helps
+                with the dilution process when the powder is applied to water, reducing superficial tension which makes
+                it possible for the lyophilized powder to easily mix with water, as a wetting agent.<sup>30</sup>
+                Regarding wetter
+                ingredients we propose the use of Dioctyl sulfosuccinate sodium, which is an commonly used additive as
+                an expressing agent, stabilizer, emulsifiable and moisturizer <sup>31</sup>; and sodium N-methyl oleoyl
+                taurate
+                which is an anionic surfactant.<sup>32</sup> A dispersant is also needed in the composition of the
+                wettable powder.
+                In this case, the dispersant’s function is to maintain a stable suspension and avoid particle
+                agglomeration when two components are mixed, we plan on using a modified styrene acrylic polymer which
+                is a polymer dispersant in powder form specially recommended for WP.<sup>30</sup>
+            </p>
+            <p>
+                The use of a surfactant is also needed, which is a key component in the composition of the wettable
+                powder. In this case, the main focus are its dispersion and humidification properties. We propose the
+                use of an anionic surfactant, this will be used thanks to its amphiphilic properties since molecules
+                with amphiphilic character have the ability to soluble polar and non-polar molecules.<sup>33</sup> The
+                use of
+                biodegradable surfactants like Alkylphenol ethoxylate, alcohol ethoxylates and high oil fatty acids
+                limits the formation of foam during the mixing process.<sup>30</sup>
+            </p>
+            <p>
+                In order to define the percentage of our inert and our active ingredients that are shown in our label,
+                we took as reference a product in the market that was similar to our production in its composition,
+                which is “Harpin EA”. This product also has a soluble powder formulation, which contains a type of
+                protein that are naturally produced in some bacteria and are used to improve the health of plants,
+                production, and quality of the crops.<sup>34</sup> Due to the fact that this product was used as our
+                reference, we
+                decided to propose the following percentage: 3% of active ingredient and 97% of inert ingredient, this
+                percentage is commonly used in the vast majority of products with harpoon protein as an active
+                ingredient. <sup>35, 36</sup>
+            </p>
+            <p><strong>Application</strong></p>
+            <p>
+                For our products application, we took the client’s needs as our main focus, this lead to the most
+                effective application method which is through an irrigation system. Therefore, high degrees of
+                automatization can be achieved when looking at labor, water and energy savings. Another advantage is
+                that it does not need leveling since it is capable to adapt to undulation topography, which allows a
+                better planification during sowing season. This is called an agriculture insurance since it does not
+                require rain to its growth.<sup>37</sup> It also allows the application of products directly on the
+                plant’s foot
+                near the roots for better exploitation in less time, which is an advantage for our product. It enables a
+                rational and measured use of water in agricultural fields, avoiding wet roads and areas that surround
+                the crops, reducing weed growth and disease development. Finally, it multiplies water and chemical
+                product exploitation applying them systematically and directly.<sup>38</sup> Our product dissolves in a
+                preparation
+                tank to be injected by the use of injection pumps into the irrigation system. For more information go to
+                our <a href="/Team:Tec-Chihuahua/Entrepreneurship">Entrepreneurship</a> page.
+            </p>
+            <p>
+                Spore removal before sowing is possible by having antifungal peptides that posses different action
+                mechanisms. PsDef1 and WAMP1b are capable of attacking the fungus when the plant is already infected,
+                and AtPFN1 allows sport removal even before sowing. A biofungicide composed of the three peptides would
+                be able to act as a preventive and treatment product, likewise, when acting inside the infected organism
+                it can be classified as a systemic biofungicide. Because of this, the use of our product in two
+                applications is proposed, the first is preventive and used during the initial growth process or seedling
+                phase that lasts 12-20 days after sowing, this is the cycle stage where the root starts to grow in
+                cotton plants and our product can start to bring protection to the plant.<sup>39</sup> The second
+                application would
+                be performed at least two weeks after flowering, 30-40 days after sowing <sup>39</sup>, because it has
+                been proven
+                that products used in cotton have higher effectivity in this stage; after flowering, disease treatment
+                becomes complicated.<sup>39</sup> Besides, <i>V. dahliae</i> symptoms are frequently seen in plants that
+                are in flowering
+                state and even more developed ones. <sup>40</sup>
+            </p>
+            <p>
+                Our product will be applied by medium watering with an average watering of 6 hours, therefore, our
+                product would be applied once the first 3 watering hours are completed. This would be done aiming at the
+                roots, covering them completely with our peptides. The injection of our product will stop half an hour
+                before watering ends, with the purpose of not losing product on the surface. In conclusion, our product
+                should be applied for 2 and a half hour of irrigation. This would result in an amount of 25m3 of water
+                per hectare per hour, which is average water invested in a cotton field with a common drip tape
+                irrigation system.<sup>41</sup>
+            </p>
+            <p><strong>Packaging</strong></p>
+            <p>
+                Thanks to the classification of the product, it turned out to be necessary to explain the sanitary
+                conditions of the containers and <a href="">packing</a>. Analyzing the
+                previous factors, it was concluded that the ideal container is “sachet” which is commonly used for
+                powdered pesticides. Because it is hermetic, it guarantees the conservation and purity of the product.
+                Thanks to the aluminium, paper, and other plastic components of the package, the bag possesses
+                flexibility combined with antimicrobial properties with high levels of asepsia in order to extend the
+                conservation of the product. <sup>42</sup> Due to the fact that this product is widely used in different
+                species
+                including annual plants, herbaceous perennials and wood <sup>43</sup>, usage of the product will
+                probably imply
+                large amounts of it. The following NOM was taken into account: NOM-018-STPS-2015 (NOM for the
+                identification and communication of dangers and risks by dangerous chemical substances in work centers)
+                in order to define the conditions where the product can be stored while being unused. <sup>44</sup> For
+                more information visit our <a href="">Risk Analisis</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container shadow mainContainer" style="margin-top: 4rem; margin-bottom: 4rem;" id="references">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>References</h2>
+            <ol>
+                <li>Keymanesh, K., Soltani, S., & Sardari, S. (2009). Application of antimicrobial peptides in
+                    agriculture and food industry. <i>World Journal of Microbiology and Biotechnology</i>, 25(6),
+                    933-944. doi:
+                    10.1007/s11274-009-9984-7</li>
+                <li>Berlanger, I., & Powelson, M. (2005). <i>Verticillium wilt. The Plant Health Instructor.</i> doi:
+                    10.1094/PHI-I-2000-0801-01</li>
+                <li>Park, S.-C., Kim, I. R., Kim, J.-Y., Lee, Y., Kim, E.-J., Jung, J. H., … Lee, J. R. (2018).
+                    <i>
+                        Molecular mechanism of Arabidopsis thaliana profilins as antifungal proteins. Biochimica et
+                        Biophysica Acta (BBA) - General Subjects, 1862(12), 2545–2554.
+                    </i> doi:10.1016/j.bbagen.2018.07.028</li>
+                <li>Fradin, E., & Thomma, B. (2006). <i>
+                        Physiology and molecular aspects of Verticillium wilt diseases
+                        caused by V. dahliae and V.albo-atrum. Molecular Plant Phatology, 7(2), 71-86.
+                    </i>doi:
+                    10.1111/j.1364-3703.2006.00323.x
+                </li>
+                <li>Khairutdinov, B. I., Ermakova, E. A., Yusypovych, Y. M., Bessolicina, E. K., Tarasova, N. B.,
+                    Toporkova, Y. Y., … Nesmelova, I. V. (2017). <i>
+                        NMR structure, conformational dynamics, and biological
+                        activity of Ps Def1 defensin from Pinus sylvestris. Biochimica et Biophysica Acta (BBA) -
+                        Proteins
+                        and Proteomics, 1865(8), 1085–1094.
+                    </i>doi:10.1016/j.bbapap.2017.05.012</li>
+                <li>Naumann, T. A., & Wicklow, D. T. (2013). <i>
+                        Chitinase modifying proteins from phylogenetically distinct
+                        lineages of Brassica pathogens. Physiological and molecular plant pathology, 82, 1-9.
+                    </i>doi:
+                    https://doi.org/10.1016/j.pmpp.2012.12.001
+                </li>
+                <li>Slavokhotova, A. A., Naumann, T. A., Price, N. P., Rogozhin, E. A., Andreev, Y. A., Vassilevski, A.
+                    A., & Odintsova, T. I. (2014). <i>
+                        Novel mode of action of plant defense peptides–hevein‐like
+                        antimicrobial peptides from wheat inhibit fungal metalloproteases. The FEBS journal, 281(20),
+                        4754-4764.
+                    </i>doi: 10.1111/febs.13015
+                </li>
+                <li>Veggiani, G., & de Marco, A. (2011). Improved quantitative and qualitative production of
+                    single-domain intrabodies mediated by the co-expression of Erv1p sulfhydryl oxidase. Protein
+                    expression and purification, 79(1), 111-114. doi: 10.1016/j.pep.2011.03.005</li>
+                <li>
+                    New England Biolabs. (2017). BL21 Competent E. coli. New England Biolabs. Recovered from:
+                    https://international.neb.com/-/media/catalog/datacards-or-manuals/c2530datasheet-lot5.pdf?rev=b24342f0b57e4efc82499efee0a57aa3
+                </li>
+                <li>
+                    Berkmen, M. (2012). Production of disulfide-bonded proteins in Escherichia coli. <i>
+                        Protein expression
+                        and purification
+                    </i>, 82(1), 240-251. doi: https://doi.org/10.1016/j.pep.2011.10.009
+                </li>
+                <li>
+                    Banerjee, A., Leang, C., Ueki, T., Nevin, K. P., & Lovley, D. R. (2014). Lactose-inducible system
+                    for metabolic engineering of Clostridium ljungdahlii. Applied and environmental microbiology, 80(8),
+                    2410–2416. doi:10.1128/AEM.03666-13
+                </li>
+                <li>
+                    Terpe, K. (2006). Overview of bacterial expression systems for heterologous protein production: from
+                    molecular and biochemical fundamentals to commercial systems. <i>
+                        Applied microbiology and
+                        biotechnology, 72(2),
+                    </i> 211. doi: 10.1007/s00253-006-0465-8
+                </li>
+                <li>
+                    New England BioLabs. (2012). <i>E. coli</i> Expression Strains. Retrieved from
+                    https://international.neb.com/products/competent-cells/e-coli-expression-strains/e-coli-expression-strains
+                </li>
+                <li>
+                    Ren, G., Ke, N., & Berkmen, M. (2016). Use of the SHuffle strains in production of proteins. <i>
+                        Current
+                        protocols in protein science
+                    </i>, 85(1), 5-26.
+                </li>
+                <li>
+                    Bio-Rad. (2019). His-Tag Purification. Retrieved from
+                    https://www.bio-rad.com/featured/en/his-tag-purification.html
+                </li>
+                <li>
+                    Lee, J. E., Hofhaus, G., & Lisowsky, T. (2000). Erv1p from Saccharomyces cerevisiae is a FAD‐linked
+                    sulfhydryl oxidase. FEBS letters, 477(1-2), 62-66. doi: 10.1016/s0014-5793(00)01767-1
+                </li>
+                <li>
+                    Hatahet, F., Nguyen, V. D., Salo, K. E., & Ruddock, L. W. (2010). Disruption of reducing pathways is
+                    not essential for efficient disulfide bond formation in the cytoplasm of E. coli. Microbial cell
+                    factories, 9(1), 67. doi: 10.1186/1475-2859-9-67
+                </li>
+                <li>
+                    Kah, M., & Hofmann, T. (2014). <i>
+                        Nanopesticide research: Current trends and future priorities.
+                        Environment International, 63, 224–235.
+                    </i>doi:10.1016/j.envint.2013.11.015
+                </li>
+                <li>
+                    Ali MA, Rehman I, Iqbal A, Din S, Rao AQ, Latif A, Samiullah TR, Azam S, Husnain T. (2014).
+                    <i>Nanotechnology, a new frontier in Agriculture.</i> Adv. life sci., 1(3), pp. 129-138.
+                </li>
+                <li>
+                    Lizardi-Mendoza, J., Argüelles Monal, W. M., & Goycoolea Valencia, F. M. (2016). <i>
+                        Chemical
+                        Characteristics and Functional Properties of Chitosan. Chitosan in the Preservation of
+                        Agricultural
+                        Commodities, 3–31.
+                    </i> doi:10.1016/b978-0-12-802735-6.00001-x
+                </li>
+                <li>
+                    Jie, P., Venkatraman, S. S., Min, F., Freddy, B. Y. C., & Huat, G. L. (2005). <i>
+                        Micelle-like
+                        nanoparticles of star-branched PEO–PLA copolymers as chemotherapeutic carrier. Journal of
+                        Controlled
+                        Release, 110(1), 20–33.
+                    </i>doi:10.1016/j.jconrel.2005.09.011
+                </li>
+                <li>
+                    Prego, C., Torres, D., & Alonso, M. J. (2005). <i>
+                        The potential of chitosan for the oral administration
+                        of peptides. Expert Opinion on Drug Delivery, 2(5), 843–854.
+                    </i> doi:10.1517/17425247.2.5.843
+                </li>
+                <li>
+                    Chandy, T., Das, G. S., Wilson, R. F., & Rao, G. H. R. (2002). <i>
+                        Development of polylactide
+                        microspheres for protein encapsulation and delivery. Journal of Applied Polymer Science, 86(5),
+                        1285–1295.
+                    </i> doi:10.1002/app.11139
+                </li>
+                <li>
+                    Xu, L., Cao, L.-D., Li, F.-M., Wang, X.-J., & Huang, Q.-L. (2014). <i>
+                        Utilization of Chitosan-Lactide
+                        Copolymer Nanoparticles as Controlled Release Pesticide Carrier for Pyraclostrobin
+                        AgainstColletotrichum gossypiiSouthw. Journal of Dispersion Science and Technology, 35(4),
+                        544–550.
+
+                    </i>doi:10.1080/01932691.2013.800455
+                </li>
+                <li>
+                    Saucedo, A. (2018). <i>Registra Ojinaga la más alta temperatura.</i> Retrieved from:
+                    https://www.elheraldodechihuahua.com.mx/local/registra-ojinaga-la-mas-alta-temperatura-1865744.html
+                </li>
+                <li>
+                    LookChem. 2010. <i>Chitosan supplier.</i> Retrieved from: https://www.lookchem.com/Chitosan/
+                </li>
+                <li>
+                    Rogers, T. (2015). <i>Everything you need to know about polylactic acid (PLA).</i> Retrieved from:
+                    https://www.creativemechanisms.com/blog/learn-about-polylactic-acid-pla-prototypes
+                </li>
+                <li>
+                    NAANDANJAIN. (2014). <i>Algodón.</i> Retrieved from:
+                    http://es.naandanjain.com/uploads/catalogerfiles/Coton/NDJ_Cotton_booklet_span_060314F_72.pdf
+                </li>
+                <li>
+                    Ultimaker. (2017). <i>Ficha de datos de seguridad PLA. </i>Retrieved from:
+                    https://ultimaker.com/download/67584/SDS%20PLA%20v3.004-spa-ES.pdf
+                </li>
+                <li>
+                    CRODA. (2019). <i>Productos y Aplicaciones. Polvo mojable. CROPCARE. </i>Retrieved from:
+                    https://www.crodacropcare.com/es-mx/products-and-applications/wettable-powder#tab-collapse-dispersant
+                </li>
+                <li>
+                    Badui, S. (2006). Química de los alimentos. México: Pearson Educación.
+                </li>
+                <li>
+                    Brockhaus ABC Chemie, VEB F. A. Brockhaus Verlag Leipzig 1965, S. 503−504.
+                </li>
+                <li>
+                    Sanz, A. (2014). <i>La industria de los agentes tensoactivos.</i> Química orgánica industrial.
+                    Retrieved
+                    from: https://www.eii.uva.es/organica/qoi/tema-10.php
+                </li>
+                <li>
+                    Terralia. (2009). <i>Proteína Harpin 3%</i>. PS. Información Agrícola. Retrieved from:
+                    https://www.terralia.com/agroquimicos_de_mexico/view_composition?composition_id=14026
+                </li>
+                <li>Plant Health. (2012a). <i>Tecnología Harpin 3%.Plant Health Care.</i> Retrieved from:
+                    http://www.planthealthcare.es/tecnologias/harpin/</li>
+                <li>
+                    Plant Health. (2012b). <i>Proteína Harpin ea.</i> Messenger STS. Plant Health Care. Retrieved from:
+                    http://www.tacsa.mx/DEAQ/src/productos/1334_132.htm
+                </li>
+                <li>
+                    Campos del mañana. (2011). <i>Ventajas de instalar un sistema de riego en su campo.</i> Retrieved
+                    from:
+                    https://cmsa.com.py/riego/ventajas-sistema-de-riego/
+                </li>
+                <li>
+                    Sistema Agrícola. (2016). Quimigación: <i>Químicos en el sistema de riego.</i> Retrieved from:
+                    http://sistemaagricola.com.mx/blog/quimigacion-en-el-sistema-de-riego/
+                </li>
+                <li>
+                    SAGARPA. (2002). <i>Generalidades del cultivo del algodonero. Gobierno de Baja California.</i>
+                    Retrieved
+                    from: http://www.oeidrus-bc.gob.mx/sispro/algodonbc/Descargas/algodon.pdf
+                </li>
+                <li>
+                    Bonacic, I., Fogar, M., Guevara, C., Simonella, M. <i>Algodón Manual, de campo.</i> Retrieved from:
+                    http://rian.inta.gov.ar/agronomia/Manual_Algodon.pdf
+                </li>
+                <li>
+                    García, C. Personal Communication, 25 september de 2019.
+                </li>
+                <li>
+                    QuimiNet. (2012). <i>El empaque tipo sachet.</i> QuimiNet. Retrieved from:
+                    https://www.quiminet.com/articulos/el-empaque-tipo-sachet-2675644.htm
+                </li>
+                <li>
+                    Dirección General de Sanidad Vegetal. (2018). <i>Protocolo de Diagnóstico: Verticillium dahliae.</i>
+                    Tecámac, Estado de México: SENASICA. Retrieved from:
+                    https://www.gob.mx/cms/uploads/attachment/file/391130/4._Protocolo_Verticillium_dahliae.V01.pdf.
+                </li>
+                <li>
+                    <i>
+                        Sistema armonizado para la identificación y comunicación de peligros y riesgos por sustancias
+                        químicas peligrosas en los centros de trabajo.
+                    </i> Norma Oficial Mexicana NOM-018-STPS-2015. Diario
+                    Oficial de la Federación, 09 de octubre, 2015.
+                </li>
+            </ol>
         </div>
     </div>
 </div>

@@ -37,7 +37,6 @@
     top: 3%;
 }
 
-
 #cropscontainer {
     position: absolute;
     display: none;
@@ -89,7 +88,6 @@
 #harvest:hover~#harvestcontainer {
     display: block;
 }
-
 
 #ginning {
     position: absolute;

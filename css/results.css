@@ -1,0 +1,17 @@
+.imgContent {
+    background-image: url(/img/headerIMGS/brainstormingHeader.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#boxContainer {
+    border-radius: 1rem;
+    margin-top: 8rem;
+    padding: 4rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}

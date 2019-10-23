@@ -1,0 +1,47 @@
+.imgContent {
+    background-image: url(/img/headerIMGS/brainstormingHeader.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boxContainer {
+    border-radius: 1rem;
+    margin-top: 8rem;
+    padding: 4rem;
+    -webkit-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 46px -25px rgba(0, 0, 0, 0.75);
+}
+
+
+/*------------------ TABLE STYLES ---------------------------*/
+
+.lab-table {
+    border-collapse: collapse;
+    width: 40%;
+    margin-bottom: 4rem;
+}
+
+.lab-table td,
+.lab-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.lab-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.lab-table tr:hover {
+    background-color: #ddd;
+}
+
+.lab-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00806c;
+    color: white;
+}

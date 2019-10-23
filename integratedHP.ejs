@@ -11,6 +11,33 @@
 </header>
 
 
+<div class="container" style="margin-top: 5rem; margin-bottom: 5rem;">
+    <div class="row text-center" style="margin-bottom: 4rem;">
+        <h1>Overview</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam libero, maxime dignissimos,
+                magnam
+                minima perspiciatis numquam impedit saepe id harum velit aspernatur temporibus! Omnis delectus eaque
+                harum enim numquam? Nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                voluptatem
+                tenetur odio tempora consectetur veniam voluptatum! Maxime, obcaecati minus eos minima labore
+                similique
+                dolores rerum vel maiores quam ut perferendis? Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Quisquam, dignissimos? Molestias, assumenda, iure aut, laboriosam molestiae culpa voluptatum nam
+                quam
+                dolorem mollitia eveniet sint libero eum maiores. Veritatis, quod sapiente.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -143,31 +170,6 @@
     </div>
 </div>
 
-
-<div class="container" style="margin-top: 5rem; margin-bottom: 5rem;">
-    <div class="row text-center" style="margin-bottom: 4rem;">
-        <h1>Overview</h1>
-    </div>
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam libero, maxime dignissimos,
-                magnam
-                minima perspiciatis numquam impedit saepe id harum velit aspernatur temporibus! Omnis delectus eaque
-                harum enim numquam? Nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-                voluptatem
-                tenetur odio tempora consectetur veniam voluptatum! Maxime, obcaecati minus eos minima labore
-                similique
-                dolores rerum vel maiores quam ut perferendis? Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit.
-                Quisquam, dignissimos? Molestias, assumenda, iure aut, laboriosam molestiae culpa voluptatum nam
-                quam
-                dolorem mollitia eveniet sint libero eum maiores. Veritatis, quod sapiente.
-            </p>
-        </div>
-    </div>
-</div>
 
 <div class="container">
     <div class="row" style="text-align: center;">
@@ -2014,21 +2016,21 @@
             //go from one event to the next/previous one
             var visibleContent = timelineComponents["eventsContent"].find(".selected"),
                 newContent =
-                    string == "next" ? visibleContent.next() : visibleContent.prev();
+                string == "next" ? visibleContent.next() : visibleContent.prev();
 
             if (newContent.length > 0) {
                 //if there's a next/prev event - show it
                 var selectedDate = timelineComponents["eventsWrapper"].find(".selected"),
                     newEvent =
-                        string == "next" ?
-                            selectedDate
-                                .parent("li")
-                                .next("li")
-                                .children("a") :
-                            selectedDate
-                                .parent("li")
-                                .prev("li")
-                                .children("a");
+                    string == "next" ?
+                    selectedDate
+                    .parent("li")
+                    .next("li")
+                    .children("a") :
+                    selectedDate
+                    .parent("li")
+                    .prev("li")
+                    .children("a");
 
                 updateFilling(
                     newEvent,
@@ -2088,18 +2090,18 @@
             //update navigation arrows visibility
             value == 0 ?
                 timelineComponents["timelineNavigation"]
-                    .find(".prev")
-                    .addClass("inactive") :
+                .find(".prev")
+                .addClass("inactive") :
                 timelineComponents["timelineNavigation"]
-                    .find(".prev")
-                    .removeClass("inactive");
+                .find(".prev")
+                .removeClass("inactive");
             value == totWidth ?
                 timelineComponents["timelineNavigation"]
-                    .find(".next")
-                    .addClass("inactive") :
+                .find(".next")
+                .addClass("inactive") :
                 timelineComponents["timelineNavigation"]
-                    .find(".next")
-                    .removeClass("inactive");
+                .find(".next")
+                .removeClass("inactive");
         }
 
         function updateFilling(selectedEvent, filling, totWidth) {
@@ -2117,11 +2119,11 @@
         function setDatePosition(timelineComponents, min) {
             for (i = 0; i < timelineComponents["timelineDates"].length; i++) {
                 var distance = daydiff(
-                    timelineComponents["timelineDates"][0],
-                    timelineComponents["timelineDates"][i]
-                ),
+                        timelineComponents["timelineDates"][0],
+                        timelineComponents["timelineDates"][i]
+                    ),
                     distanceNorm =
-                        Math.round(distance / timelineComponents["eventsMinLapse"]) + 2;
+                    Math.round(distance / timelineComponents["eventsMinLapse"]) + 2;
                 timelineComponents["timelineEvents"]
                     .eq(i)
                     .css("left", distanceNorm * min + "px");
@@ -2130,11 +2132,11 @@
 
         function setTimelineWidth(timelineComponents, width) {
             var timeSpan = daydiff(
-                timelineComponents["timelineDates"][0],
-                timelineComponents["timelineDates"][
-                timelineComponents["timelineDates"].length - 1
-                ]
-            ),
+                    timelineComponents["timelineDates"][0],
+                    timelineComponents["timelineDates"][
+                        timelineComponents["timelineDates"].length - 1
+                    ]
+                ),
                 timeSpanNorm = timeSpan / timelineComponents["eventsMinLapse"],
                 timeSpanNorm = Math.round(timeSpanNorm) + 4,
                 totalWidth = timeSpanNorm * width;
@@ -2191,11 +2193,11 @@
         function getTranslateValue(timeline) {
             var timelineStyle = window.getComputedStyle(timeline.get(0), null),
                 timelineTranslate =
-                    timelineStyle.getPropertyValue("-webkit-transform") ||
-                    timelineStyle.getPropertyValue("-moz-transform") ||
-                    timelineStyle.getPropertyValue("-ms-transform") ||
-                    timelineStyle.getPropertyValue("-o-transform") ||
-                    timelineStyle.getPropertyValue("transform");
+                timelineStyle.getPropertyValue("-webkit-transform") ||
+                timelineStyle.getPropertyValue("-moz-transform") ||
+                timelineStyle.getPropertyValue("-ms-transform") ||
+                timelineStyle.getPropertyValue("-o-transform") ||
+                timelineStyle.getPropertyValue("transform");
 
             if (timelineTranslate.indexOf("(") >= 0) {
                 var timelineTranslate = timelineTranslate.split("(")[1];
